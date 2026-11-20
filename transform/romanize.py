@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import unicodedata
+from difflib import SequenceMatcher
 from pathlib import Path
 
 import pandas as pd
@@ -21,6 +23,55 @@ SCHEME_MAP = {
     "HK": sanscript.HK,
 }
 
+TAMIL_CONSONANTS = {
+    "க": "k", "ங": "ṅ", "ச": "c", "ஜ": "j", "ஞ": "ñ",
+    "ட": "ṭ", "ண": "ṇ", "த": "t", "ந": "n", "ப": "p",
+    "ம": "m", "ய": "y", "ர": "r", "ற": "ṟ", "ல": "l",
+    "ள": "ḷ", "ழ": "ḻ", "வ": "v", "ன": "ṉ", "ஶ": "ś", "ஷ": "ṣ",
+    "ஸ": "s", "ஹ": "h",
+}
+TAMIL_VOWELS = {
+    "அ": "a", "ஆ": "ā", "இ": "i", "ஈ": "ī", "உ": "u",
+    "ஊ": "ū", "எ": "e", "ஏ": "ē", "ஐ": "ai", "ஒ": "o",
+    "ஓ": "ō", "ஔ": "au",
+}
+TAMIL_VOWEL_SIGNS = {
+    "ா": "ā", "ி": "i", "ீ": "ī", "ு": "u", "ூ": "ū",
+    "ெ": "e", "ே": "ē", "ை": "ai", "ொ": "o", "ோ": "ō",
+    "ௌ": "au",
+}
+
+
+def _romanize_tamil_iso(text: str) -> str:
+    result = []
+    index = 0
+    while index < len(text):
+        char = text[index]
+        if char in TAMIL_CONSONANTS:
+            result.append(TAMIL_CONSONANTS[char])
+            if index + 1 < len(text) and text[index + 1] == "்":
+                index += 2
+                continue
+            if index + 1 < len(text) and text[index + 1] in TAMIL_VOWEL_SIGNS:
+                result.append(TAMIL_VOWEL_SIGNS[text[index + 1]])
+                index += 2
+                continue
+            result.append("a")
+        elif char in TAMIL_VOWELS:
+            result.append(TAMIL_VOWELS[char])
+        elif char in TAMIL_VOWEL_SIGNS:
+            result.append(TAMIL_VOWEL_SIGNS[char])
+        elif char == "ஃ":
+            result.append("ḵ")
+        elif char == "ஂ":
+            result.append("ṃ")
+        elif "௦" <= char <= "௯":
+            result.append(str(ord(char) - ord("௦")))
+        else:
+            result.append(char)
+        index += 1
+    return "".join(result)
+
 
 def romanize_text(text: str, language: str, scheme: str = "ITRANS") -> str:
     """Romanize Indic text using an explicit script-to-Latin scheme."""
@@ -32,6 +83,8 @@ def romanize_text(text: str, language: str, scheme: str = "ITRANS") -> str:
         raise ValueError(f"Unsupported scheme: {scheme}")
     if not isinstance(text, str):
         return ""
+    if lang == "ta" and code == "ISO":
+        return _romanize_tamil_iso(text)
     return transliterate(text, SCRIPT_MAP[lang], SCHEME_MAP[code])
 
 
@@ -45,13 +98,29 @@ def deromanize_text(text: str, language: str, scheme: str = "ITRANS") -> str:
 
 def character_match_rate(original: list[str], romanized: list[str], language: str,
                          scheme: str = "ITRANS") -> float:
+    if len(original) != len(romanized):
+        raise ValueError("Original and romanized lists must have equal length")
     if not original:
         return 0.0
-    exact = sum(
-        1 for original_text, romanized_text in zip(original, romanized)
-        if deromanize_text(romanized_text, language, scheme) == original_text
-    )
-    return 100.0 * exact / len(original)
+
+    def normalize_digits(text: str) -> str:
+        return "".join(
+            str(unicodedata.digit(char)) if char.isdecimal() else char
+            for char in text
+        )
+
+    matched = total = 0
+    for original_text, romanized_text in zip(original, romanized):
+        source = normalize_digits(original_text)
+        recovered = normalize_digits(deromanize_text(romanized_text, language, scheme))
+        matched += sum(
+            block.size
+            for block in SequenceMatcher(
+                None, source, recovered, autojunk=False
+            ).get_matching_blocks()
+        )
+        total += len(source)
+    return 100.0 * matched / total if total else 0.0
 
 
 def process_flores(root: Path, output_root: Path, scheme: str = "ITRANS") -> None:

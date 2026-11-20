@@ -21,26 +21,40 @@ class PivotTranslator:
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(
             model_id,
-            torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
+            dtype=torch.float16 if self.device == "cuda" else torch.float32,
         ).to(self.device)
         self.model.eval()
 
-    def translate(self, text: str, source_lang: str) -> str:
-        if not text:
-            return ""
+    def translate_many(self, texts: list[str], source_lang: str,
+                       batch_size: int = 8) -> list[str]:
+        if source_lang not in NLLB_LANG_CODES:
+            raise ValueError(f"Unsupported language: {source_lang}")
         self.tokenizer.src_lang = NLLB_LANG_CODES[source_lang]
-        inputs = self.tokenizer(
-            text,
-            return_tensors="pt",
-            truncation=True,
-            max_length=512,
-        ).to(self.device)
-        generated = self.model.generate(
-            **inputs,
-            forced_bos_token_id=self.tokenizer.convert_tokens_to_ids("eng_Latn"),
-            max_new_tokens=512,
-        )
-        return self.tokenizer.batch_decode(generated, skip_special_tokens=True)[0]
+        results = [""] * len(texts)
+        nonempty = [(index, text) for index, text in enumerate(texts) if text]
+
+        with torch.inference_mode():
+            for start in range(0, len(nonempty), batch_size):
+                batch = nonempty[start:start + batch_size]
+                inputs = self.tokenizer(
+                    [text for _, text in batch],
+                    return_tensors="pt",
+                    truncation=True,
+                    max_length=512,
+                    padding=True,
+                ).to(self.device)
+                generated = self.model.generate(
+                    **inputs,
+                    forced_bos_token_id=self.tokenizer.convert_tokens_to_ids("eng_Latn"),
+                    max_new_tokens=512,
+                )
+                decoded = self.tokenizer.batch_decode(generated, skip_special_tokens=True)
+                for (index, _), translation in zip(batch, decoded):
+                    results[index] = translation
+        return results
+
+    def translate(self, text: str, source_lang: str) -> str:
+        return self.translate_many([text], source_lang)[0]
 
 
 def translate_flores(translator: PivotTranslator, flores_root: Path,
@@ -114,38 +128,50 @@ def translate_belebele_local(translator: PivotTranslator, raw_root: Path,
     """Translate downloaded Belebele JSONL files without Hugging Face datasets."""
     output_root.mkdir(parents=True, exist_ok=True)
     timings = []
+    total_items = 0
     lang_configs = {"kn": "kan_Knda", "hi": "hin_Deva", "ta": "tam_Taml"}
 
     for lang, filename in lang_configs.items():
         source = raw_root / f"{filename}.jsonl"
         if not source.exists():
             raise FileNotFoundError(f"Missing Belebele file: {source}")
-        rows = []
+        items = []
         with source.open("r", encoding="utf-8") as handle:
-            selected = 0
             for item_id, line in enumerate(handle):
-                if limit is not None and selected >= limit:
+                if limit is not None and len(items) >= limit:
                     break
                 item = json.loads(line)
-                text_fields = [
-                    item["flores_passage"], item["question"],
-                    item["mc_answer1"], item["mc_answer2"],
-                    item["mc_answer3"], item["mc_answer4"],
-                ]
-                started = time.perf_counter()
-                translated = [translator.translate(text, lang) for text in text_fields]
-                timings.append(time.perf_counter() - started)
-                rows.append({
-                    "id": str(item.get("question_number", item_id)),
-                    "passage": translated[0],
-                    "question": translated[1],
-                    "option1": translated[2],
-                    "option2": translated[3],
-                    "option3": translated[4],
-                    "option4": translated[5],
-                    "answer": str(item["correct_answer_num"]),
-                })
-                selected += 1
+                item["_local_id"] = str(item.get("question_number", item_id))
+                items.append(item)
+        total_items += len(items)
+
+        print(f"{lang}: translating {len(items)} passages, questions, and options",
+              flush=True)
+        started = time.perf_counter()
+        passages = translator.translate_many(
+            [item["flores_passage"] for item in items], lang
+        )
+        questions = translator.translate_many(
+            [item["question"] for item in items], lang
+        )
+        options = translator.translate_many([
+            item[key] for item in items
+            for key in ("mc_answer1", "mc_answer2", "mc_answer3", "mc_answer4")
+        ], lang)
+        timings.append(time.perf_counter() - started)
+        rows = []
+        for index, item in enumerate(items):
+            option_start = index * 4
+            rows.append({
+                "id": item["_local_id"],
+                "passage": passages[index],
+                "question": questions[index],
+                "option1": options[option_start],
+                "option2": options[option_start + 1],
+                "option3": options[option_start + 2],
+                "option4": options[option_start + 3],
+                "answer": str(item["correct_answer_num"]),
+            })
         output = output_root / f"belebele_{lang}_pivot.jsonl"
         with output.open("w", encoding="utf-8") as handle:
             for row in rows:
@@ -153,7 +179,8 @@ def translate_belebele_local(translator: PivotTranslator, raw_root: Path,
         print(f"{lang}: {len(rows)} pivot items")
 
     if timings:
-        print(f"Average seconds per Belebele item: {sum(timings) / len(timings):.3f}")
+        print(f"Average seconds per Belebele item: "
+              f"{sum(timings) / max(total_items, 1):.3f}")
 
 
 def main() -> None:
