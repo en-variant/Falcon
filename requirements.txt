@@ -7,3 +7,7 @@ pydantic
 scikit-learn
 tiktoken
 uvicorn
+transformers
+sentencepiece
+streamlit
+plotly
