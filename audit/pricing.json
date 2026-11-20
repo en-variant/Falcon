@@ -1,0 +1,23 @@
+{
+  "usd_inr": {
+    "rate": 93.372746,
+    "as_of_utc": "2026-11-20T00:02:32Z",
+    "source": "https://open.er-api.com/v6/latest/USD",
+    "source_type": "daily indicative exchange-rate API"
+  },
+  "benchmarks": {
+    "cl100k": {
+      "api_model": "gpt-4-turbo",
+      "usd_per_million_input_tokens": 10.0,
+      "price_status": "historical; model is shut down",
+      "source": "https://developers.openai.com/api/docs/models/gpt-4-turbo"
+    },
+    "o200k": {
+      "api_model": "gpt-4o",
+      "usd_per_million_input_tokens": 2.5,
+      "price_status": "published standard input price",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    }
+  },
+  "note": "These are OpenAI reference price estimates, not KodeKloud billed prices. cl100k maps to a shut-down model and is historical only. Open-weight Qwen and Sarvam tokenizers have no API price here."
+}

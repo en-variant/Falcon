@@ -8,3 +8,4 @@ data/router/synthetic_predictions.csv
 data/router/request_usage.sqlite3
 data/router/request_usage.sqlite3-shm
 data/router/request_usage.sqlite3-wal
+audit/flores200_dataset/
