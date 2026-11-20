@@ -7,7 +7,6 @@ import string
 
 
 _URL_RE = re.compile(r"https?://\S+|www\.\S+", re.IGNORECASE)
-_WORD_RE = re.compile(r"\b\w+\b", re.UNICODE)
 _INDIC_RANGES = {
     "kn": ((0x0C80, 0x0CFF),),
     "hi": ((0x0900, 0x097F),),
@@ -26,6 +25,9 @@ def _in_ranges(character: str, ranges: tuple[tuple[int, int], ...]) -> bool:
     return any(start <= codepoint <= end for start, end in ranges)
 
 
+SUPPORTED_LANGUAGES = ("en", "kn", "hi", "ta")
+
+
 def infer_language(text: str) -> str:
     """Infer the dominant supported Indic script, defaulting to English."""
     counts = {
@@ -37,10 +39,10 @@ def infer_language(text: str) -> str:
 
 
 def extract_features(text: str) -> dict[str, float]:
-    """Return the contract's zero-model features as numeric values."""
+    """Return stable numeric features; language one-hot values are added separately."""
     characters = list(text)
     denominator = max(len(characters), 1)
-    word_count = len(_WORD_RE.findall(text))
+    word_count = len(text.split())
     indic_count = sum(_in_ranges(char, _INDIC_ALL_RANGES) for char in characters)
     latin_count = sum(char.isascii() and char.isalpha() for char in characters)
     digit_count = sum(char.isdigit() for char in characters)
@@ -56,3 +58,17 @@ def extract_features(text: str) -> dict[str, float]:
         "punctuation_proportion": punctuation_count / denominator,
         "url_proportion": len(url_matches) / max(word_count, 1),
     }
+
+
+def extract_routing_features(text: str, language: str) -> dict[str, float]:
+    """Extract text features plus an explicit language signal for mixed-script input."""
+    if language not in SUPPORTED_LANGUAGES:
+        raise ValueError(f"Unsupported language: {language}")
+    features = extract_features(text)
+    features.update(
+        {
+            f"lang_{supported}": float(language == supported)
+            for supported in SUPPORTED_LANGUAGES
+        }
+    )
+    return features

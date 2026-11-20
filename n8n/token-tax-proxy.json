@@ -1,0 +1,97 @@
+{
+  "name": "Token Tax - Optimize Chat Completion",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "token-tax/optimize",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "2e71f947-1a8a-41f0-98e1-9ae673ecb2a1",
+      "name": "Receive Chat Request",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        260,
+        300
+      ],
+      "webhookId": "c1cfe5de-3287-4e03-bd55-11b03536bd1f"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{ $json.headers.authorization }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ $json.body }}",
+        "options": {
+          "timeout": 120000
+        }
+      },
+      "id": "c36d59b6-951a-4f34-991e-34e64830a83b",
+      "name": "Call Token Tax API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        520,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "a9b48e1c-949a-4268-818e-b61c0607884c",
+      "name": "Return Optimized Completion",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        780,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Receive Chat Request": {
+      "main": [
+        [
+          {
+            "node": "Call Token Tax API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Token Tax API": {
+      "main": [
+        [
+          {
+            "node": "Return Optimized Completion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

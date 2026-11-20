@@ -37,6 +37,7 @@ def verify(
     direct_base_url: str,
     proxy_url: str,
     api_key: str,
+    proxy_api_key: str,
     language: str,
 ) -> None:
     if not 50 <= limit <= 100:
@@ -89,6 +90,7 @@ def verify(
             direct_tokens, _ = _usage(direct_response, "Direct")
             proxy_response = client.post(
                 proxy_url,
+                headers={"Authorization": f"Bearer {proxy_api_key}"},
                 json={**body, "language": language},
             )
             proxy_tokens, proxy_body = _usage(proxy_response, "Proxy")
@@ -132,8 +134,11 @@ def main() -> None:
     )
     args = parser.parse_args()
     api_key = os.getenv("OPENAI_API_KEY")
+    proxy_api_key = os.getenv("TOKEN_TAX_PROXY_API_KEY")
     if not api_key:
         parser.error("Set OPENAI_API_KEY before running billed verification.")
+    if not proxy_api_key:
+        parser.error("Set TOKEN_TAX_PROXY_API_KEY before running billed verification.")
     if not args.model:
         parser.error("Set OPENAI_MODEL or pass --model.")
     verify(
@@ -144,6 +149,7 @@ def main() -> None:
         args.direct_base_url,
         args.proxy_url,
         api_key,
+        proxy_api_key,
         args.lang,
     )
 

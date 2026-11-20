@@ -70,12 +70,17 @@ class BilledVerificationTests(unittest.TestCase):
                     "https://provider.test/v1",
                     "http://127.0.0.1:8000",
                     "test-key",
+                    "proxy-key",
                     "kn",
                 )
 
             self.assertEqual(len(_FakeClient.requests), 100)
             self.assertEqual(_FakeClient.requests[0]["json"]["messages"][0]["content"], "prompt 0")
             self.assertEqual(_FakeClient.requests[1]["json"]["language"], "kn")
+            self.assertEqual(
+                _FakeClient.requests[1]["headers"]["Authorization"],
+                "Bearer proxy-key",
+            )
             with output_path.open(newline="", encoding="utf-8") as file:
                 rows = list(csv.DictReader(file))
             self.assertEqual(len(rows), 50)

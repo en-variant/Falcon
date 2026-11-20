@@ -1,6 +1,6 @@
 import unittest
 
-from router.features import extract_features, infer_language
+from router.features import extract_features, extract_routing_features, infer_language
 
 
 class FeatureTests(unittest.TestCase):
@@ -17,6 +17,12 @@ class FeatureTests(unittest.TestCase):
         self.assertGreater(features["digit_proportion"], 0)
         self.assertGreater(features["punctuation_proportion"], 0)
         self.assertEqual(infer_language("ನಮಸ್ಕಾರ"), "kn")
+        self.assertEqual(extract_features("ನಮಸ್ಕಾರ")["word_count"], 1)
+
+    def test_explicit_language_is_available_for_code_mixed_text(self):
+        features = extract_routing_features("hello ನಮಸ್ಕಾರ", "kn")
+        self.assertEqual(features["lang_kn"], 1)
+        self.assertEqual(features["lang_en"], 0)
 
     def test_urls_are_counted(self):
         features = extract_features("Read https://example.com now")
