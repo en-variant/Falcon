@@ -35,7 +35,12 @@ class RouterTrainingTests(unittest.TestCase):
             metrics = {
                 row["strategy"]: row
                 for row in evaluate(
-                    results, examples, model_path, predictions_path
+                    results,
+                    examples,
+                    model_path,
+                    predictions_path,
+                    bootstrap_samples=100,
+                    training_data_kind="synthetic",
                 )
             }
 
@@ -46,6 +51,15 @@ class RouterTrainingTests(unittest.TestCase):
             )
             predictions = pd.read_csv(predictions_path)
             self.assertEqual(list(predictions.columns), ["id", "chosen_strategy"])
+            self.assertEqual(len(predictions), len(examples))
+            self.assertTrue(
+                {
+                    "accuracy_ci_low",
+                    "accuracy_ci_high",
+                    "tokens_ci_low",
+                    "tokens_ci_high",
+                }.issubset(metrics["router"])
+            )
             self.assertTrue(model_path.is_file())
 
 
