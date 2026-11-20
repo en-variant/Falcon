@@ -81,11 +81,36 @@ English for each tokenizer; English is 1.00 by construction.
 ## Run the offline Streamlit demo
 
 ```bash
-streamlit run audit/app.py
+python -m pip install -r requirements.txt
+python -m streamlit run audit/app.py
 ```
 
-The interface reads only local files and cached tokenizer assets. When other
-members' experiment results, transform module, router predictions, or measured
-failure cases are absent, it explicitly reports those panels as unavailable;
-it never fills them with made-up demo rows.
+The **Convert text** tab has a conversion-mode dropdown:
 
+- **Native** returns the input unchanged.
+- **Romanized** transliterates the script to Latin letters with ISO, preserving
+  the words rather than translating their meaning.
+- **English pivot** translates meaning to English with
+  `facebook/nllb-200-distilled-600M`; it runs automatically when selected and
+  uses a background worker so the UI remains responsive.
+
+The starter text follows the selected language. If a user edits the starter,
+changing language does not overwrite that custom text.
+
+The first pivot translation requires PyTorch and downloads the model weights
+(about 2.4 GB). CPU inference may be slow. For a CPU-only Linux environment,
+install the CPU wheel and then the translation packages:
+
+```bash
+python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r transform/requirements.txt
+```
+
+For GPU systems, first install the PyTorch build matching the installed CUDA
+version from the official PyTorch selector, then install
+`transform/requirements.txt`.
+
+The **Overview** and **Token data** tabs chart measured FLORES counts. The
+**Quality results** tab only renders if real `data/eval/results.csv` exists;
+missing Member C results are explicitly labeled unavailable. Tokenizer assets
+must already be cached for the live count inspector to work offline.

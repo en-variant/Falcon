@@ -11,3 +11,4 @@ transformers
 sentencepiece
 streamlit
 plotly
+indic-transliteration
