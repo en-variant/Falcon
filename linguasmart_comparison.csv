@@ -1,0 +1,4 @@
+representation,token_count,tokens_saved_vs_reference,token_reduction_percent,reference_representation
+native_kannada,44,0,0.0,native_kannada
+romanized_kannada,11,33,75.0,native_kannada
+english,6,38,86.36363636363636,native_kannada

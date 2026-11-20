@@ -1,0 +1,16 @@
+sentence_id,representation,token_count,estimated_input_cost_usd,model_id,token_count_source,measurement_status,input_price_per_million_tokens_usd
+1,native_kannada,9,6.75e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+1,romanized_kannada,9,6.75e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+1,english,6,4.5e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+2,native_kannada,7,5.25e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+2,romanized_kannada,7,5.25e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+2,english,4,3e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+3,native_kannada,8,6e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+3,romanized_kannada,8,6e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+3,english,5,3.75e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+4,native_kannada,10,7.5e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+4,romanized_kannada,10,7.5e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+4,english,5,3.75e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+5,native_kannada,8,6e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+5,romanized_kannada,9,6.75e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75
+5,english,5,3.75e-06,gemini-3.8-flash,Gemini countTokens API,actual_gemini_api_measurement,0.75

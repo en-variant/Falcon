@@ -1,0 +1,4 @@
+representation,model_id,token_count,token_count_source,measurement_status,input_set_type,cost_type,input_price_per_million_tokens_usd,estimated_llm_input_cost_usd
+native_kannada,gemini-3.8-flash,12,Gemini countTokens API,actual_gemini_api_measurement,user_provided,LLM input only,0.75,9e-06
+romanized_kannada,gemini-3.8-flash,12,Gemini countTokens API,actual_gemini_api_measurement,user_provided,LLM input only,0.75,9e-06
+english,gemini-3.8-flash,8,Gemini countTokens API,actual_gemini_api_measurement,user_provided,LLM input only,0.75,6e-06
