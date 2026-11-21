@@ -1,0 +1,1129 @@
+{
+  "Hindi": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 296,
+    "transliterated_tokens": 166,
+    "savings_percent": 43.92,
+    "exact_round_trips": 9,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "भारत की राजधानी क्या है?",
+        "original_tokens": 24,
+        "transliterated": "bhArata kI rAjadhAnI kyA hai?",
+        "transliterated_tokens": 14,
+        "savings_percent": 41.67,
+        "round_trip": "भारत की राजधानी क्या है?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q02",
+        "original": "पानी का रासायनिक सूत्र क्या है?",
+        "original_tokens": 28,
+        "transliterated": "pAnI kA rAsAyanika sUtra kyA hai?",
+        "transliterated_tokens": 17,
+        "savings_percent": 39.29,
+        "round_trip": "पानी का रासायनिक सूत्र क्या है?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q03",
+        "original": "पौधों को सूर्य का प्रकाश क्यों चाहिए?",
+        "original_tokens": 34,
+        "transliterated": "paudhoM ko sUrya kA prakAsha kyoM chAhie?",
+        "transliterated_tokens": 22,
+        "savings_percent": 35.29,
+        "round_trip": "पौधों को सूर्य का प्रकाश क्यों चाहिए?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q04",
+        "original": "घर में पानी कैसे बचाया जा सकता है?",
+        "original_tokens": 33,
+        "transliterated": "ghara meM pAnI kaise bachAyA jA sakatA hai?",
+        "transliterated_tokens": 19,
+        "savings_percent": 42.42,
+        "round_trip": "घर में पानी कैसे बचाया जा सकता है?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q05",
+        "original": "स्वस्थ नाश्ते के तीन विकल्प क्या हैं?",
+        "original_tokens": 35,
+        "transliterated": "svastha nAshte ke tIna vikalpa kyA haiM?",
+        "transliterated_tokens": 18,
+        "savings_percent": 48.57,
+        "round_trip": "स्वस्थ नाश्ते के तीन विकल्प क्या हैं?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q06",
+        "original": "चाय कैसे बनाई जाती है?",
+        "original_tokens": 23,
+        "transliterated": "chAya kaise banAI jAtI hai?",
+        "transliterated_tokens": 12,
+        "savings_percent": 47.83,
+        "round_trip": "चाय कैसे बनाई जाती है?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "बारिश के दिन क्या साथ ले जाना चाहिए?",
+        "original_tokens": 34,
+        "transliterated": "bArisha ke dina kyA sAtha le jAnA chAhie?",
+        "transliterated_tokens": 19,
+        "savings_percent": 44.12,
+        "round_trip": "बारिश के दिन क्या साथ ले जाना चाहिए?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q08",
+        "original": "सौर ऊर्जा क्या है?",
+        "original_tokens": 18,
+        "transliterated": "saura UrjA kyA hai?",
+        "transliterated_tokens": 9,
+        "savings_percent": 50.0,
+        "round_trip": "सौर ऊर्जा क्या है?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q09",
+        "original": "मौसम और जलवायु में क्या अंतर है?",
+        "original_tokens": 32,
+        "transliterated": "mausama aura jalavAyu meM kyA aMtara hai?",
+        "transliterated_tokens": 17,
+        "savings_percent": 46.88,
+        "round_trip": "मौसम और जलवायु में क्या अंतर है?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q10",
+        "original": "कागज़ का पुनर्चक्रण क्यों करना चाहिए?",
+        "original_tokens": 35,
+        "transliterated": "kAgaza kA punarchakraNa kyoM karanA chAhie?",
+        "transliterated_tokens": 19,
+        "savings_percent": 45.71,
+        "round_trip": "कागज़ का पुनर्चक्रण क्यों करना चाहिए?",
+        "round_trip_exact": false
+      }
+    ]
+  },
+  "Tamil": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 480,
+    "transliterated_tokens": 235,
+    "savings_percent": 51.04,
+    "exact_round_trips": 3,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "இந்தியாவின் தலைநகரம் எது?",
+        "original_tokens": 36,
+        "transliterated": "indhiyAviன dhalainagharaM èdhu?",
+        "transliterated_tokens": 17,
+        "savings_percent": 52.78,
+        "round_trip": "இந்தியாவின தலைநகரம் எது?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q02",
+        "original": "நீரின் வேதியியல் வாய்பாடு என்ன?",
+        "original_tokens": 42,
+        "transliterated": "nIriன vedhiyiyal vAybhADhu èனன?",
+        "transliterated_tokens": 21,
+        "savings_percent": 50.0,
+        "round_trip": "நீரின வேதியியல் வாய்பாடு எனன?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q03",
+        "original": "தாவரங்களுக்கு சூரிய ஒளி ஏன் தேவை?",
+        "original_tokens": 47,
+        "transliterated": "dhAvara~NghaLughghu jhUriya òLi eன dhevai?",
+        "transliterated_tokens": 25,
+        "savings_percent": 46.81,
+        "round_trip": "தாவரங்களுக்கு சூரிய ஒளி ஏன தேவை?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q04",
+        "original": "வீட்டில் தண்ணீரை எப்படிச் சேமிக்கலாம்?",
+        "original_tokens": 52,
+        "transliterated": "vIDhDhil dhaNNIrai èbhbhaDhijh jhemighghalAM?",
+        "transliterated_tokens": 25,
+        "savings_percent": 51.92,
+        "round_trip": "வீட்டில் தண்ணீரை எப்படிச் சேமிக்கலாம்?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q05",
+        "original": "ஆரோக்கியமான காலை உணவுக்கு மூன்று உணவுகள் எவை?",
+        "original_tokens": 66,
+        "transliterated": "AroghghiyamAன ghAlai uNavughghu mUனRu uNavughaL èvai?",
+        "transliterated_tokens": 31,
+        "savings_percent": 53.03,
+        "round_trip": "ஆரோக்கியமான காலை உணவுக்கு மூனறு உணவுகள் எவை?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q06",
+        "original": "தேநீர் செய்வது எப்படி?",
+        "original_tokens": 32,
+        "transliterated": "dhenIr jhèyvadhu èbhbhaDhi?",
+        "transliterated_tokens": 17,
+        "savings_percent": 46.88,
+        "round_trip": "தேநீர் செய்வது எப்படி?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "மழை நாளில் எதை எடுத்துச் செல்ல வேண்டும்?",
+        "original_tokens": 55,
+        "transliterated": "mazhai nALil èdhai èDhudhdhujh jhèlla veNDhuM?",
+        "transliterated_tokens": 25,
+        "savings_percent": 54.55,
+        "round_trip": "மழை நாளில் எதை எடுத்துச் செல்ல வேண்டும்?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q08",
+        "original": "சூரிய ஆற்றல் என்றால் என்ன?",
+        "original_tokens": 35,
+        "transliterated": "jhUriya ARRal èனRAl èனன?",
+        "transliterated_tokens": 16,
+        "savings_percent": 54.29,
+        "round_trip": "சூரிய ஆற்றல் எனறால் எனன?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q09",
+        "original": "வானிலைக்கும் காலநிலைக்கும் என்ன வித்தியாசம்?",
+        "original_tokens": 60,
+        "transliterated": "vAனilaighghuM ghAlanilaighghuM èனன vidhdhiyAjhaM?",
+        "transliterated_tokens": 29,
+        "savings_percent": 51.67,
+        "round_trip": "வானஇலைக்கும் காலநிலைக்கும் எனன வித்தியாசம்?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q10",
+        "original": "காகிதத்தை ஏன் மறுசுழற்சி செய்ய வேண்டும்?",
+        "original_tokens": 55,
+        "transliterated": "ghAghidhadhdhai eன maRujhuzhaRjhi jhèyya veNDhuM?",
+        "transliterated_tokens": 29,
+        "savings_percent": 47.27,
+        "round_trip": "காகிதத்தை ஏன மறுசுழற்சி செய்ய வேண்டும்?",
+        "round_trip_exact": false
+      }
+    ]
+  },
+  "Kannada": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 554,
+    "transliterated_tokens": 180,
+    "savings_percent": 67.51,
+    "exact_round_trips": 10,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "ಭಾರತದ ರಾಜಧಾನಿ ಯಾವುದು?",
+        "original_tokens": 37,
+        "transliterated": "bhAratada rAjadhAni yAvudu?",
+        "transliterated_tokens": 13,
+        "savings_percent": 64.86,
+        "round_trip": "ಭಾರತದ ರಾಜಧಾನಿ ಯಾವುದು?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q02",
+        "original": "ನೀರಿನ ರಾಸಾಯನಿಕ ಸೂತ್ರ ಯಾವುದು?",
+        "original_tokens": 49,
+        "transliterated": "nIrina rAsAyanika sUtra yAvudu?",
+        "transliterated_tokens": 15,
+        "savings_percent": 69.39,
+        "round_trip": "ನೀರಿನ ರಾಸಾಯನಿಕ ಸೂತ್ರ ಯಾವುದು?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q03",
+        "original": "ಸಸ್ಯಗಳಿಗೆ ಸೂರ್ಯನ ಬೆಳಕು ಏಕೆ ಬೇಕು?",
+        "original_tokens": 55,
+        "transliterated": "sasyagaLigè sUryana bèLaku ekè beku?",
+        "transliterated_tokens": 19,
+        "savings_percent": 65.45,
+        "round_trip": "ಸಸ್ಯಗಳಿಗೆ ಸೂರ್ಯನ ಬೆಳಕು ಏಕೆ ಬೇಕು?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q04",
+        "original": "ಮನೆಯಲ್ಲಿ ನೀರನ್ನು ಹೇಗೆ ಉಳಿಸಬಹುದು?",
+        "original_tokens": 57,
+        "transliterated": "manèyalli nIrannu hegè uLisabahudu?",
+        "transliterated_tokens": 17,
+        "savings_percent": 70.18,
+        "round_trip": "ಮನೆಯಲ್ಲಿ ನೀರನ್ನು ಹೇಗೆ ಉಳಿಸಬಹುದು?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q05",
+        "original": "ಆರೋಗ್ಯಕರ ಉಪಾಹಾರಕ್ಕೆ ಮೂರು ಆಹಾರಗಳು ಯಾವುವು?",
+        "original_tokens": 71,
+        "transliterated": "Arogyakara upAhArakkè mUru AhAragaLu yAvuvu?",
+        "transliterated_tokens": 23,
+        "savings_percent": 67.61,
+        "round_trip": "ಆರೋಗ್ಯಕರ ಉಪಾಹಾರಕ್ಕೆ ಮೂರು ಆಹಾರಗಳು ಯಾವುವು?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q06",
+        "original": "ಚಹಾವನ್ನು ಹೇಗೆ ತಯಾರಿಸಬೇಕು?",
+        "original_tokens": 45,
+        "transliterated": "chahAvannu hegè tayArisabeku?",
+        "transliterated_tokens": 15,
+        "savings_percent": 66.67,
+        "round_trip": "ಚಹಾವನ್ನು ಹೇಗೆ ತಯಾರಿಸಬೇಕು?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "ಮಳೆಯ ದಿನ ಏನನ್ನು ಜೊತೆಯಲ್ಲಿ ತೆಗೆದುಕೊಂಡು ಹೋಗಬೇಕು?",
+        "original_tokens": 81,
+        "transliterated": "maLèya dina enannu jòtèyalli tègèdukòMDu hogabeku?",
+        "transliterated_tokens": 28,
+        "savings_percent": 65.43,
+        "round_trip": "ಮಳೆಯ ದಿನ ಏನನ್ನು ಜೊತೆಯಲ್ಲಿ ತೆಗೆದುಕೊಂಡು ಹೋಗಬೇಕು?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q08",
+        "original": "ಸೌರಶಕ್ತಿ ಎಂದರೇನು?",
+        "original_tokens": 31,
+        "transliterated": "saurashakti èMdarenu?",
+        "transliterated_tokens": 10,
+        "savings_percent": 67.74,
+        "round_trip": "ಸೌರಶಕ್ತಿ ಎಂದರೇನು?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q09",
+        "original": "ಹವಾಮಾನ ಮತ್ತು ವಾಯುಗುಣದ ನಡುವಿನ ವ್ಯತ್ಯಾಸವೇನು?",
+        "original_tokens": 75,
+        "transliterated": "havAmAna mattu vAyuguNada naDuvina vyatyAsavenu?",
+        "transliterated_tokens": 21,
+        "savings_percent": 72.0,
+        "round_trip": "ಹವಾಮಾನ ಮತ್ತು ವಾಯುಗುಣದ ನಡುವಿನ ವ್ಯತ್ಯಾಸವೇನು?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q10",
+        "original": "ಕಾಗದವನ್ನು ಏಕೆ ಮರುಬಳಕೆ ಮಾಡಬೇಕು?",
+        "original_tokens": 53,
+        "transliterated": "kAgadavannu ekè marubaLakè mADabeku?",
+        "transliterated_tokens": 19,
+        "savings_percent": 64.15,
+        "round_trip": "ಕಾಗದವನ್ನು ಏಕೆ ಮರುಬಳಕೆ ಮಾಡಬೇಕು?",
+        "round_trip_exact": true
+      }
+    ]
+  },
+  "Telugu": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 552,
+    "transliterated_tokens": 175,
+    "savings_percent": 68.3,
+    "exact_round_trips": 10,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "భారతదేశ రాజధాని ఏది?",
+        "original_tokens": 35,
+        "transliterated": "bhAratadesha rAjadhAni edi?",
+        "transliterated_tokens": 12,
+        "savings_percent": 65.71,
+        "round_trip": "భారతదేశ రాజధాని ఏది?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q02",
+        "original": "నీటి రసాయన సూత్రం ఏమిటి?",
+        "original_tokens": 41,
+        "transliterated": "nITi rasAyana sUtraM emiTi?",
+        "transliterated_tokens": 14,
+        "savings_percent": 65.85,
+        "round_trip": "నీటి రసాయన సూత్రం ఏమిటి?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q03",
+        "original": "మొక్కలకు సూర్యరశ్మి ఎందుకు అవసరం?",
+        "original_tokens": 59,
+        "transliterated": "mòkkalaku sUryarashmi èMduku avasaraM?",
+        "transliterated_tokens": 20,
+        "savings_percent": 66.1,
+        "round_trip": "మొక్కలకు సూర్యరశ్మి ఎందుకు అవసరం?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q04",
+        "original": "ఇంట్లో నీటిని ఎలా ఆదా చేయవచ్చు?",
+        "original_tokens": 53,
+        "transliterated": "iMTlo nITini èlA AdA cheyavachchu?",
+        "transliterated_tokens": 17,
+        "savings_percent": 67.92,
+        "round_trip": "ఇంట్లో నీటిని ఎలా ఆదా చేయవచ్చు?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q05",
+        "original": "ఆరోగ్యకరమైన అల్పాహారానికి మూడు ఆహారాలు ఏవి?",
+        "original_tokens": 77,
+        "transliterated": "Arogyakaramaina alpAhArAniki mUDu AhArAlu evi?",
+        "transliterated_tokens": 22,
+        "savings_percent": 71.43,
+        "round_trip": "ఆరోగ్యకరమైన అల్పాహారానికి మూడు ఆహారాలు ఏవి?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q06",
+        "original": "టీని ఎలా తయారు చేయాలి?",
+        "original_tokens": 37,
+        "transliterated": "TIni èlA tayAru cheyAli?",
+        "transliterated_tokens": 13,
+        "savings_percent": 64.86,
+        "round_trip": "టీని ఎలా తయారు చేయాలి?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "వర్షం పడే రోజున ఏమి వెంట తీసుకెళ్లాలి?",
+        "original_tokens": 65,
+        "transliterated": "varShaM paDe rojuna emi vèMTa tIsukèLlAli?",
+        "transliterated_tokens": 22,
+        "savings_percent": 66.15,
+        "round_trip": "వర్షం పడే రోజున ఏమి వెంట తీసుకెళ్లాలి?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q08",
+        "original": "సౌరశక్తి అంటే ఏమిటి?",
+        "original_tokens": 35,
+        "transliterated": "saurashakti aMTe emiTi?",
+        "transliterated_tokens": 12,
+        "savings_percent": 65.71,
+        "round_trip": "సౌరశక్తి అంటే ఏమిటి?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q09",
+        "original": "వాతావరణం మరియు శీతోష్ణస్థితి మధ్య తేడా ఏమిటి?",
+        "original_tokens": 79,
+        "transliterated": "vAtAvaraNaM mariyu shItoShNasthiti madhya teDA emiTi?",
+        "transliterated_tokens": 23,
+        "savings_percent": 70.89,
+        "round_trip": "వాతావరణం మరియు శీతోష్ణస్థితి మధ్య తేడా ఏమిటి?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q10",
+        "original": "కాగితాన్ని ఎందుకు పునర్వినియోగం చేయాలి?",
+        "original_tokens": 71,
+        "transliterated": "kAgitAnni èMduku punarviniyogaM cheyAli?",
+        "transliterated_tokens": 20,
+        "savings_percent": 71.83,
+        "round_trip": "కాగితాన్ని ఎందుకు పునర్వినియోగం చేయాలి?",
+        "round_trip_exact": true
+      }
+    ]
+  },
+  "Bengali": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 361,
+    "transliterated_tokens": 189,
+    "savings_percent": 47.65,
+    "exact_round_trips": 7,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "ভারতের রাজধানী কী?",
+        "original_tokens": 23,
+        "transliterated": "bhAratera rAjadhAnI kI?",
+        "transliterated_tokens": 12,
+        "savings_percent": 47.83,
+        "round_trip": "ভারতের রাজধানী কী?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q02",
+        "original": "জলের রাসায়নিক সংকেত কী?",
+        "original_tokens": 31,
+        "transliterated": "jalera rAsAya়nika saMketa kI?",
+        "transliterated_tokens": 16,
+        "savings_percent": 48.39,
+        "round_trip": "জলের রাসায়নিক সংকেত কী?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q03",
+        "original": "গাছের সূর্যের আলো কেন দরকার?",
+        "original_tokens": 33,
+        "transliterated": "gAChera sUryera Alo kena darakAra?",
+        "transliterated_tokens": 16,
+        "savings_percent": 51.52,
+        "round_trip": "গাছের সূর্যের আলো কেন দরকার?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q04",
+        "original": "বাড়িতে কীভাবে জল সাশ্রয় করা যায়?",
+        "original_tokens": 44,
+        "transliterated": "vADa়ite kIbhAve jala sAshraya় karA yAya়?",
+        "transliterated_tokens": 27,
+        "savings_percent": 38.64,
+        "round_trip": "বাড়ইতে কীভাবে জল সাশ্রয় করা যায়?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q05",
+        "original": "স্বাস্থ্যকর প্রাতরাশের তিনটি খাবার কী কী?",
+        "original_tokens": 46,
+        "transliterated": "svAsthyakara prAtarAshera tinaTi khAvAra kI kI?",
+        "transliterated_tokens": 22,
+        "savings_percent": 52.17,
+        "round_trip": "স্বাস্থ্যকর প্রাতরাশের তিনটি খাবার কী কী?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q06",
+        "original": "চা কীভাবে তৈরি করতে হয়?",
+        "original_tokens": 31,
+        "transliterated": "chA kIbhAve tairi karate haya়?",
+        "transliterated_tokens": 16,
+        "savings_percent": 48.39,
+        "round_trip": "চা কীভাবে তৈরি করতে হয়?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "বৃষ্টির দিনে কী সঙ্গে নিয়ে যাওয়া উচিত?",
+        "original_tokens": 49,
+        "transliterated": "vRRiShTira dine kI sa~Nge niya়e yAoya়A uchita?",
+        "transliterated_tokens": 28,
+        "savings_percent": 42.86,
+        "round_trip": "বৃষ্টির দিনে কী সঙ্গে নিয়এ যাওয়আ উচিত?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q08",
+        "original": "সৌরশক্তি কী?",
+        "original_tokens": 17,
+        "transliterated": "saurashakti kI?",
+        "transliterated_tokens": 8,
+        "savings_percent": 52.94,
+        "round_trip": "সৌরশক্তি কী?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q09",
+        "original": "আবহাওয়া ও জলবায়ুর মধ্যে পার্থক্য কী?",
+        "original_tokens": 50,
+        "transliterated": "AvahAoya়A o jalavAya়ura madhye pArthakya kI?",
+        "transliterated_tokens": 26,
+        "savings_percent": 48.0,
+        "round_trip": "আবহাওয়আ ও জলবায়উর মধ্যে পার্থক্য কী?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q10",
+        "original": "কাগজ পুনর্ব্যবহার করা উচিত কেন?",
+        "original_tokens": 37,
+        "transliterated": "kAgaja punarvyavahAra karA uchita kena?",
+        "transliterated_tokens": 18,
+        "savings_percent": 51.35,
+        "round_trip": "কাগজ পুনর্ব্যবহার করা উচিত কেন?",
+        "round_trip_exact": true
+      }
+    ]
+  },
+  "Malayalam": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 620,
+    "transliterated_tokens": 231,
+    "savings_percent": 62.74,
+    "exact_round_trips": 10,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "ഇന്ത്യയുടെ തലസ്ഥാനം ഏതാണ്?",
+        "original_tokens": 42,
+        "transliterated": "intyayuTè talasthAnaM etAN?",
+        "transliterated_tokens": 14,
+        "savings_percent": 66.67,
+        "round_trip": "ഇന്ത്യയുടെ തലസ്ഥാനം ഏതാണ്?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q02",
+        "original": "വെള്ളത്തിന്റെ രാസസൂത്രം എന്താണ്?",
+        "original_tokens": 50,
+        "transliterated": "vèLLattinRè rAsasUtraM èntAN?",
+        "transliterated_tokens": 17,
+        "savings_percent": 66.0,
+        "round_trip": "വെള്ളത്തിന്റെ രാസസൂത്രം എന്താണ്?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q03",
+        "original": "സസ്യങ്ങൾക്ക് സൂര്യപ്രകാശം ആവശ്യമായത് എന്തുകൊണ്ട്?",
+        "original_tokens": 75,
+        "transliterated": "sasya~N~Naൾkk sUryaprakAshaM AvashyamAyat èntukòNT?",
+        "transliterated_tokens": 30,
+        "savings_percent": 60.0,
+        "round_trip": "സസ്യങ്ങൾക്ക് സൂര്യപ്രകാശം ആവശ്യമായത് എന്തുകൊണ്ട്?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q04",
+        "original": "വീട്ടിൽ വെള്ളം എങ്ങനെ സംരക്ഷിക്കാം?",
+        "original_tokens": 56,
+        "transliterated": "vITTiൽ vèLLaM è~N~Nanè saMrakShikkAM?",
+        "transliterated_tokens": 24,
+        "savings_percent": 57.14,
+        "round_trip": "വീട്ടിൽ വെള്ളം എങ്ങനെ സംരക്ഷിക്കാം?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q05",
+        "original": "ആരോഗ്യകരമായ പ്രഭാതഭക്ഷണത്തിന് മൂന്ന് ഭക്ഷണങ്ങൾ ഏതൊക്കെയാണ്?",
+        "original_tokens": 94,
+        "transliterated": "ArogyakaramAya prabhAtabhakShaNattin mUnn bhakShaNa~N~Naൾ etòkkèyAN?",
+        "transliterated_tokens": 36,
+        "savings_percent": 61.7,
+        "round_trip": "ആരോഗ്യകരമായ പ്രഭാതഭക്ഷണത്തിന് മൂന്ന് ഭക്ഷണങ്ങൾ ഏതൊക്കെയാണ്?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q06",
+        "original": "ചായ എങ്ങനെ ഉണ്ടാക്കാം?",
+        "original_tokens": 35,
+        "transliterated": "chAya è~N~Nanè uNTAkkAM?",
+        "transliterated_tokens": 16,
+        "savings_percent": 54.29,
+        "round_trip": "ചായ എങ്ങനെ ഉണ്ടാക്കാം?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "മഴയുള്ള ദിവസം എന്താണ് കൂടെ കൊണ്ടുപോകേണ്ടത്?",
+        "original_tokens": 71,
+        "transliterated": "mazhayuLLa divasaM èntAN kUTè kòNTupokeNTat?",
+        "transliterated_tokens": 23,
+        "savings_percent": 67.61,
+        "round_trip": "മഴയുള്ള ദിവസം എന്താണ് കൂടെ കൊണ്ടുപോകേണ്ടത്?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q08",
+        "original": "സൗരോർജം എന്താണ്?",
+        "original_tokens": 27,
+        "transliterated": "saൗroർjaM èntAN?",
+        "transliterated_tokens": 12,
+        "savings_percent": 55.56,
+        "round_trip": "സൗരോർജം എന്താണ്?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q09",
+        "original": "കാലാവസ്ഥയും ദീർഘകാല കാലാവസ്ഥയും തമ്മിലുള്ള വ്യത്യാസം എന്താണ്?",
+        "original_tokens": 101,
+        "transliterated": "kAlAvasthayuM dIർghakAla kAlAvasthayuM tammiluLLa vyatyAsaM èntAN?",
+        "transliterated_tokens": 37,
+        "savings_percent": 63.37,
+        "round_trip": "കാലാവസ്ഥയും ദീർഘകാല കാലാവസ്ഥയും തമ്മിലുള്ള വ്യത്യാസം എന്താണ്?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q10",
+        "original": "കടലാസ് പുനരുപയോഗം ചെയ്യേണ്ടത് എന്തുകൊണ്ട്?",
+        "original_tokens": 69,
+        "transliterated": "kaTalAs punarupayogaM chèyyeNTat èntukòNT?",
+        "transliterated_tokens": 22,
+        "savings_percent": 68.12,
+        "round_trip": "കടലാസ് പുനരുപയോഗം ചെയ്യേണ്ടത് എന്തുകൊണ്ട്?",
+        "round_trip_exact": true
+      }
+    ]
+  },
+  "Gujarati": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 508,
+    "transliterated_tokens": 186,
+    "savings_percent": 63.39,
+    "exact_round_trips": 10,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "ભારતની રાજધાની કઈ છે?",
+        "original_tokens": 35,
+        "transliterated": "bhAratanI rAjadhAnI kaI Che?",
+        "transliterated_tokens": 13,
+        "savings_percent": 62.86,
+        "round_trip": "ભારતની રાજધાની કઈ છે?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q02",
+        "original": "પાણીનું રાસાયણિક સૂત્ર શું છે?",
+        "original_tokens": 51,
+        "transliterated": "pANInuM rAsAyaNika sUtra shuM Che?",
+        "transliterated_tokens": 19,
+        "savings_percent": 62.75,
+        "round_trip": "પાણીનું રાસાયણિક સૂત્ર શું છે?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q03",
+        "original": "છોડને સૂર્યપ્રકાશની જરૂર શા માટે છે?",
+        "original_tokens": 61,
+        "transliterated": "ChoDane sUryaprakAshanI jarUra shA mATe Che?",
+        "transliterated_tokens": 21,
+        "savings_percent": 65.57,
+        "round_trip": "છોડને સૂર્યપ્રકાશની જરૂર શા માટે છે?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q04",
+        "original": "ઘરમાં પાણી કેવી રીતે બચાવી શકાય?",
+        "original_tokens": 53,
+        "transliterated": "gharamAM pANI kevI rIte bachAvI shakAya?",
+        "transliterated_tokens": 19,
+        "savings_percent": 64.15,
+        "round_trip": "ઘરમાં પાણી કેવી રીતે બચાવી શકાય?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q05",
+        "original": "સ્વસ્થ નાસ્તા માટેના ત્રણ ખોરાક કયા છે?",
+        "original_tokens": 65,
+        "transliterated": "svastha nAstA mATenA traNa khorAka kayA Che?",
+        "transliterated_tokens": 20,
+        "savings_percent": 69.23,
+        "round_trip": "સ્વસ્થ નાસ્તા માટેના ત્રણ ખોરાક કયા છે?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q06",
+        "original": "ચા કેવી રીતે બનાવવી?",
+        "original_tokens": 33,
+        "transliterated": "chA kevI rIte banAvavI?",
+        "transliterated_tokens": 13,
+        "savings_percent": 60.61,
+        "round_trip": "ચા કેવી રીતે બનાવવી?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "વરસાદના દિવસે સાથે શું લઈ જવું જોઈએ?",
+        "original_tokens": 59,
+        "transliterated": "varasAdanA divase sAthe shuM laI javuM joIe?",
+        "transliterated_tokens": 22,
+        "savings_percent": 62.71,
+        "round_trip": "વરસાદના દિવસે સાથે શું લઈ જવું જોઈએ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q08",
+        "original": "સૌર ઊર્જા શું છે?",
+        "original_tokens": 27,
+        "transliterated": "saura UrjA shuM Che?",
+        "transliterated_tokens": 10,
+        "savings_percent": 62.96,
+        "round_trip": "સૌર ઊર્જા શું છે?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q09",
+        "original": "હવામાન અને આબોહવા વચ્ચે શું તફાવત છે?",
+        "original_tokens": 61,
+        "transliterated": "havAmAna ane AbohavA vachche shuM taphAvata Che?",
+        "transliterated_tokens": 23,
+        "savings_percent": 62.3,
+        "round_trip": "હવામાન અને આબોહવા વચ્ચે શું તફાવત છે?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q10",
+        "original": "કાગળનું પુનઃચક્રણ શા માટે કરવું જોઈએ?",
+        "original_tokens": 63,
+        "transliterated": "kAgaLanuM punaHchakraNa shA mATe karavuM joIe?",
+        "transliterated_tokens": 26,
+        "savings_percent": 58.73,
+        "round_trip": "કાગળનું પુનઃચક્રણ શા માટે કરવું જોઈએ?",
+        "round_trip_exact": true
+      }
+    ]
+  },
+  "Punjabi": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 508,
+    "transliterated_tokens": 199,
+    "savings_percent": 60.83,
+    "exact_round_trips": 4,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "ਭਾਰਤ ਦੀ ਰਾਜਧਾਨੀ ਕੀ ਹੈ?",
+        "original_tokens": 35,
+        "transliterated": "bhArata dI rAjadhAnI kI hai?",
+        "transliterated_tokens": 14,
+        "savings_percent": 60.0,
+        "round_trip": "ਭਾਰਤ ਦੀ ਰਾਜਧਾਨੀ ਕੀ ਹੈ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q02",
+        "original": "ਪਾਣੀ ਦਾ ਰਸਾਇਣਕ ਫ਼ਾਰਮੂਲਾ ਕੀ ਹੈ?",
+        "original_tokens": 49,
+        "transliterated": "pANI dA rasAiNaka pha਼AramUlA kI hai?",
+        "transliterated_tokens": 20,
+        "savings_percent": 59.18,
+        "round_trip": "ਪਾਣੀ ਦਾ ਰਸਾਇਣਕ ਫ਼ਆਰਮੂਲਾ ਕੀ ਹੈ?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q03",
+        "original": "ਬੂਟਿਆਂ ਨੂੰ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਕਿਉਂ ਚਾਹੀਦੀ ਹੈ?",
+        "original_tokens": 67,
+        "transliterated": "bUTiAM nUM sUraja dI rausa਼nI kiuM chAhIdI hai?",
+        "transliterated_tokens": 28,
+        "savings_percent": 58.21,
+        "round_trip": "ਬੂਟਿਆਂ ਨੂਂ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਕਿਉਂ ਚਾਹੀਦੀ ਹੈ?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q04",
+        "original": "ਘਰ ਵਿੱਚ ਪਾਣੀ ਕਿਵੇਂ ਬਚਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+        "original_tokens": 57,
+        "transliterated": "ghara vichcha pANI kiveM bachAiA jA sakadA hai?",
+        "transliterated_tokens": 20,
+        "savings_percent": 64.91,
+        "round_trip": "ਘਰ ਵਿਚ੍ਚ ਪਾਣੀ ਕਿਵੇਂ ਬਚਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q05",
+        "original": "ਸਿਹਤਮੰਦ ਨਾਸ਼ਤੇ ਲਈ ਤਿੰਨ ਖਾਣੇ ਕਿਹੜੇ ਹਨ?",
+        "original_tokens": 61,
+        "transliterated": "sihatamaMda nAsa਼te laI tiMna khANe kiha.De hana?",
+        "transliterated_tokens": 25,
+        "savings_percent": 59.02,
+        "round_trip": "ਸਿਹਤਮਂਦ ਨਾਸ਼ਤੇ ਲਈ ਤਿਂਨ ਖਾਣੇ ਕਿਹੜੇ ਹਨ?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q06",
+        "original": "ਚਾਹ ਕਿਵੇਂ ਬਣਾਈ ਜਾਂਦੀ ਹੈ?",
+        "original_tokens": 39,
+        "transliterated": "chAha kiveM baNAI jAMdI hai?",
+        "transliterated_tokens": 15,
+        "savings_percent": 61.54,
+        "round_trip": "ਚਾਹ ਕਿਵੇਂ ਬਣਾਈ ਜਾਂਦੀ ਹੈ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "ਮੀਂਹ ਵਾਲੇ ਦਿਨ ਨਾਲ ਕੀ ਲੈ ਕੇ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ?",
+        "original_tokens": 65,
+        "transliterated": "mIMha vAle dina nAla kI lai ke jANA chAhIdA hai?",
+        "transliterated_tokens": 23,
+        "savings_percent": 64.62,
+        "round_trip": "ਮੀਂਹ ਵਾਲੇ ਦਿਨ ਨਾਲ ਕੀ ਲੈ ਕੇ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q08",
+        "original": "ਸੂਰਜੀ ਊਰਜਾ ਕੀ ਹੈ?",
+        "original_tokens": 27,
+        "transliterated": "sUrajI UrajA kI hai?",
+        "transliterated_tokens": 11,
+        "savings_percent": 59.26,
+        "round_trip": "ਸੂਰਜੀ ਊਰਜਾ ਕੀ ਹੈ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q09",
+        "original": "ਮੌਸਮ ਅਤੇ ਜਲਵਾਯੂ ਵਿੱਚ ਕੀ ਫ਼ਰਕ ਹੈ?",
+        "original_tokens": 51,
+        "transliterated": "mausama ate jalavAyU vichcha kI pha਼raka hai?",
+        "transliterated_tokens": 21,
+        "savings_percent": 58.82,
+        "round_trip": "ਮੌਸਮ ਅਤੇ ਜਲਵਾਯੂ ਵਿਚ੍ਚ ਕੀ ਫ਼ਰਕ ਹੈ?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q10",
+        "original": "ਕਾਗਜ਼ ਨੂੰ ਮੁੜ ਵਰਤਣਾ ਕਿਉਂ ਚਾਹੀਦਾ ਹੈ?",
+        "original_tokens": 57,
+        "transliterated": "kAgaja਼ nUM mu.Da varataNA kiuM chAhIdA hai?",
+        "transliterated_tokens": 22,
+        "savings_percent": 61.4,
+        "round_trip": "ਕਾਗਜ਼ ਨੂਂ ਮੁੜ ਵਰਤਣਾ ਕਿਉਂ ਚਾਹੀਦਾ ਹੈ?",
+        "round_trip_exact": false
+      }
+    ]
+  },
+  "Marathi": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 306,
+    "transliterated_tokens": 184,
+    "savings_percent": 39.87,
+    "exact_round_trips": 10,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "भारताची राजधानी कोणती आहे?",
+        "original_tokens": 28,
+        "transliterated": "bhAratAchI rAjadhAnI koNatI Ahe?",
+        "transliterated_tokens": 17,
+        "savings_percent": 39.29,
+        "round_trip": "भारताची राजधानी कोणती आहे?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q02",
+        "original": "पाण्याचे रासायनिक सूत्र काय आहे?",
+        "original_tokens": 30,
+        "transliterated": "pANyAche rAsAyanika sUtra kAya Ahe?",
+        "transliterated_tokens": 19,
+        "savings_percent": 36.67,
+        "round_trip": "पाण्याचे रासायनिक सूत्र काय आहे?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q03",
+        "original": "वनस्पतींना सूर्यप्रकाशाची गरज का असते?",
+        "original_tokens": 38,
+        "transliterated": "vanaspatIMnA sUryaprakAshAchI garaja kA asate?",
+        "transliterated_tokens": 22,
+        "savings_percent": 42.11,
+        "round_trip": "वनस्पतींना सूर्यप्रकाशाची गरज का असते?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q04",
+        "original": "घरात पाण्याची बचत कशी करता येईल?",
+        "original_tokens": 32,
+        "transliterated": "gharAta pANyAchI bachata kashI karatA yeIla?",
+        "transliterated_tokens": 22,
+        "savings_percent": 31.25,
+        "round_trip": "घरात पाण्याची बचत कशी करता येईल?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q05",
+        "original": "निरोगी नाश्त्यासाठी तीन पदार्थ कोणते?",
+        "original_tokens": 38,
+        "transliterated": "nirogI nAshtyAsAThI tIna padArtha koNate?",
+        "transliterated_tokens": 21,
+        "savings_percent": 44.74,
+        "round_trip": "निरोगी नाश्त्यासाठी तीन पदार्थ कोणते?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q06",
+        "original": "चहा कसा बनवायचा?",
+        "original_tokens": 18,
+        "transliterated": "chahA kasA banavAyachA?",
+        "transliterated_tokens": 11,
+        "savings_percent": 38.89,
+        "round_trip": "चहा कसा बनवायचा?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "पावसाच्या दिवशी सोबत काय न्यावे?",
+        "original_tokens": 32,
+        "transliterated": "pAvasAchyA divashI sobata kAya nyAve?",
+        "transliterated_tokens": 18,
+        "savings_percent": 43.75,
+        "round_trip": "पावसाच्या दिवशी सोबत काय न्यावे?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q08",
+        "original": "सौर ऊर्जा म्हणजे काय?",
+        "original_tokens": 22,
+        "transliterated": "saura UrjA mhaNaje kAya?",
+        "transliterated_tokens": 13,
+        "savings_percent": 40.91,
+        "round_trip": "सौर ऊर्जा म्हणजे काय?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q09",
+        "original": "हवामान आणि जलवायू यांमध्ये काय फरक आहे?",
+        "original_tokens": 43,
+        "transliterated": "havAmAna ANi jalavAyU yAMmadhye kAya pharaka Ahe?",
+        "transliterated_tokens": 24,
+        "savings_percent": 44.19,
+        "round_trip": "हवामान आणि जलवायू यांमध्ये काय फरक आहे?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q10",
+        "original": "कागदाचा पुनर्वापर का करावा?",
+        "original_tokens": 25,
+        "transliterated": "kAgadAchA punarvApara kA karAvA?",
+        "transliterated_tokens": 17,
+        "savings_percent": 32.0,
+        "round_trip": "कागदाचा पुनर्वापर का करावा?",
+        "round_trip_exact": true
+      }
+    ]
+  },
+  "Odia": {
+    "status": "measured",
+    "operation": "Indic-script to ITRANS transliteration (not translation)",
+    "tokenizer": "cl100k_base",
+    "sample_count": 10,
+    "original_tokens": 719,
+    "transliterated_tokens": 186,
+    "savings_percent": 74.13,
+    "exact_round_trips": 9,
+    "samples": [
+      {
+        "id": "q01",
+        "original": "ଭାରତର ରାଜଧାନୀ କେଉଁଟି?",
+        "original_tokens": 54,
+        "transliterated": "bhAratara rAjadhAnI keu.NTi?",
+        "transliterated_tokens": 14,
+        "savings_percent": 74.07,
+        "round_trip": "ଭାରତର ରାଜଧାନୀ କେଉଁଟି?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q02",
+        "original": "ଜଳର ରାସାୟନିକ ସୂତ୍ର କ'ଣ?",
+        "original_tokens": 54,
+        "transliterated": "jaLara rAsAYanika sUtra ka'Na?",
+        "transliterated_tokens": 15,
+        "savings_percent": 72.22,
+        "round_trip": "ଜଳର ରାସାୟନିକ ସୂତ୍ର କ'ଣ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q03",
+        "original": "ଗଛଲତା ପାଇଁ ସୂର୍ଯ୍ୟାଲୋକ କାହିଁକି ଦରକାର?",
+        "original_tokens": 94,
+        "transliterated": "gaChalatA pAi.N sUryYAloka kAhi.Nki darakAra?",
+        "transliterated_tokens": 24,
+        "savings_percent": 74.47,
+        "round_trip": "ଗଛଲତା ପାଇଁ ସୂର୍ଯ୍ୟାଲୋକ କାହିଁକି ଦରକାର?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q04",
+        "original": "ଘରେ ଜଳ କିପରି ସଞ୍ଚୟ କରିହେବ?",
+        "original_tokens": 63,
+        "transliterated": "ghare jaLa kipari sa~nchaYa kariheba?",
+        "transliterated_tokens": 17,
+        "savings_percent": 73.02,
+        "round_trip": "ଘରେ ଜଳ କିପରି ସଞ୍ଚୟ କରିହେବ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q05",
+        "original": "ସ୍ୱାସ୍ଥ୍ୟକର ଜଳଖିଆ ପାଇଁ ତିନୋଟି ଖାଦ୍ୟ କ'ଣ?",
+        "original_tokens": 98,
+        "transliterated": "sୱAsthYakara jaLakhiA pAi.N tinoTi khAdYa ka'Na?",
+        "transliterated_tokens": 27,
+        "savings_percent": 72.45,
+        "round_trip": "ସ୍ୱଆସ୍ଥ୍ୟକର ଜଳଖିଆ ପାଇଁ ତିନୋଟି ଖାଦ୍ୟ କ'ଣ?",
+        "round_trip_exact": false
+      },
+      {
+        "id": "q06",
+        "original": "ଚା କିପରି ତିଆରି କରାଯାଏ?",
+        "original_tokens": 55,
+        "transliterated": "chA kipari tiAri karAyAe?",
+        "transliterated_tokens": 13,
+        "savings_percent": 76.36,
+        "round_trip": "ଚା କିପରି ତିଆରି କରାଯାଏ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q07",
+        "original": "ବର୍ଷା ଦିନରେ ସାଙ୍ଗରେ କ'ଣ ନେବା ଉଚିତ?",
+        "original_tokens": 82,
+        "transliterated": "barShA dinare sA~Ngare ka'Na nebA uchita?",
+        "transliterated_tokens": 19,
+        "savings_percent": 76.83,
+        "round_trip": "ବର୍ଷା ଦିନରେ ସାଙ୍ଗରେ କ'ଣ ନେବା ଉଚିତ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q08",
+        "original": "ସୌର ଶକ୍ତି କ'ଣ?",
+        "original_tokens": 31,
+        "transliterated": "saura shakti ka'Na?",
+        "transliterated_tokens": 9,
+        "savings_percent": 70.97,
+        "round_trip": "ସୌର ଶକ୍ତି କ'ଣ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q09",
+        "original": "ପାଣିପାଗ ଓ ଜଳବାୟୁ ମଧ୍ୟରେ ପାର୍ଥକ୍ୟ କ'ଣ?",
+        "original_tokens": 92,
+        "transliterated": "pANipAga o jaLabAYu madhYare pArthakYa ka'Na?",
+        "transliterated_tokens": 23,
+        "savings_percent": 75.0,
+        "round_trip": "ପାଣିପାଗ ଓ ଜଳବାୟୁ ମଧ୍ୟରେ ପାର୍ଥକ୍ୟ କ'ଣ?",
+        "round_trip_exact": true
+      },
+      {
+        "id": "q10",
+        "original": "କାଗଜର ପୁନଃବ୍ୟବହାର କାହିଁକି କରିବା ଉଚିତ?",
+        "original_tokens": 96,
+        "transliterated": "kAgajara punaHbYabahAra kAhi.Nki karibA uchita?",
+        "transliterated_tokens": 25,
+        "savings_percent": 73.96,
+        "round_trip": "କାଗଜର ପୁନଃବ୍ୟବହାର କାହିଁକି କରିବା ଉଚିତ?",
+        "round_trip_exact": true
+      }
+    ]
+  },
+  "Urdu": {
+    "status": "unsupported",
+    "reason": "The installed library has no Urdu/Arabic-script mapping; no transliteration was attempted.",
+    "sample_count": 10,
+    "samples": [],
+    "savings_percent": null
+  }
+}

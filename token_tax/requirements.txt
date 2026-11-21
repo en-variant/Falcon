@@ -1,0 +1,4 @@
+tiktoken
+sentencepiece
+indic-transliteration
+flask

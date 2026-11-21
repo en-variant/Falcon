@@ -1,0 +1,3266 @@
+{
+  "English": {
+    "sample_count": 10,
+    "word_count": 63,
+    "char_count": 331,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 73,
+        "fertility": 1.159,
+        "mean_tokens_per_sample": 7.3,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "What is the capital of India?",
+            "word_count": 6,
+            "char_count": 29,
+            "token_count": 7,
+            "fertility": 1.167
+          },
+          {
+            "id": "q02",
+            "text": "What is the chemical formula of water?",
+            "word_count": 7,
+            "char_count": 38,
+            "token_count": 8,
+            "fertility": 1.143
+          },
+          {
+            "id": "q03",
+            "text": "Why do plants need sunlight?",
+            "word_count": 5,
+            "char_count": 28,
+            "token_count": 6,
+            "fertility": 1.2
+          },
+          {
+            "id": "q04",
+            "text": "How can water be saved at home?",
+            "word_count": 7,
+            "char_count": 31,
+            "token_count": 8,
+            "fertility": 1.143
+          },
+          {
+            "id": "q05",
+            "text": "What are three healthy breakfast foods?",
+            "word_count": 6,
+            "char_count": 39,
+            "token_count": 7,
+            "fertility": 1.167
+          },
+          {
+            "id": "q06",
+            "text": "How do you make tea?",
+            "word_count": 5,
+            "char_count": 20,
+            "token_count": 6,
+            "fertility": 1.2
+          },
+          {
+            "id": "q07",
+            "text": "What should you take with you on a rainy day?",
+            "word_count": 10,
+            "char_count": 45,
+            "token_count": 11,
+            "fertility": 1.1
+          },
+          {
+            "id": "q08",
+            "text": "What is solar energy?",
+            "word_count": 4,
+            "char_count": 21,
+            "token_count": 5,
+            "fertility": 1.25
+          },
+          {
+            "id": "q09",
+            "text": "What is the difference between weather and climate?",
+            "word_count": 8,
+            "char_count": 51,
+            "token_count": 9,
+            "fertility": 1.125
+          },
+          {
+            "id": "q10",
+            "text": "Why should paper be recycled?",
+            "word_count": 5,
+            "char_count": 29,
+            "token_count": 6,
+            "fertility": 1.2
+          }
+        ],
+        "multiplier_vs_english": 1.0
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 73,
+        "fertility": 1.159,
+        "mean_tokens_per_sample": 7.3,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "What is the capital of India?",
+            "word_count": 6,
+            "char_count": 29,
+            "token_count": 7,
+            "fertility": 1.167
+          },
+          {
+            "id": "q02",
+            "text": "What is the chemical formula of water?",
+            "word_count": 7,
+            "char_count": 38,
+            "token_count": 8,
+            "fertility": 1.143
+          },
+          {
+            "id": "q03",
+            "text": "Why do plants need sunlight?",
+            "word_count": 5,
+            "char_count": 28,
+            "token_count": 6,
+            "fertility": 1.2
+          },
+          {
+            "id": "q04",
+            "text": "How can water be saved at home?",
+            "word_count": 7,
+            "char_count": 31,
+            "token_count": 8,
+            "fertility": 1.143
+          },
+          {
+            "id": "q05",
+            "text": "What are three healthy breakfast foods?",
+            "word_count": 6,
+            "char_count": 39,
+            "token_count": 7,
+            "fertility": 1.167
+          },
+          {
+            "id": "q06",
+            "text": "How do you make tea?",
+            "word_count": 5,
+            "char_count": 20,
+            "token_count": 6,
+            "fertility": 1.2
+          },
+          {
+            "id": "q07",
+            "text": "What should you take with you on a rainy day?",
+            "word_count": 10,
+            "char_count": 45,
+            "token_count": 11,
+            "fertility": 1.1
+          },
+          {
+            "id": "q08",
+            "text": "What is solar energy?",
+            "word_count": 4,
+            "char_count": 21,
+            "token_count": 5,
+            "fertility": 1.25
+          },
+          {
+            "id": "q09",
+            "text": "What is the difference between weather and climate?",
+            "word_count": 8,
+            "char_count": 51,
+            "token_count": 9,
+            "fertility": 1.125
+          },
+          {
+            "id": "q10",
+            "text": "Why should paper be recycled?",
+            "word_count": 5,
+            "char_count": 29,
+            "token_count": 6,
+            "fertility": 1.2
+          }
+        ],
+        "multiplier_vs_english": 1.0
+      },
+      "p50k (GPT-3)": {
+        "token_count": 73,
+        "fertility": 1.159,
+        "mean_tokens_per_sample": 7.3,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "What is the capital of India?",
+            "word_count": 6,
+            "char_count": 29,
+            "token_count": 7,
+            "fertility": 1.167
+          },
+          {
+            "id": "q02",
+            "text": "What is the chemical formula of water?",
+            "word_count": 7,
+            "char_count": 38,
+            "token_count": 8,
+            "fertility": 1.143
+          },
+          {
+            "id": "q03",
+            "text": "Why do plants need sunlight?",
+            "word_count": 5,
+            "char_count": 28,
+            "token_count": 6,
+            "fertility": 1.2
+          },
+          {
+            "id": "q04",
+            "text": "How can water be saved at home?",
+            "word_count": 7,
+            "char_count": 31,
+            "token_count": 8,
+            "fertility": 1.143
+          },
+          {
+            "id": "q05",
+            "text": "What are three healthy breakfast foods?",
+            "word_count": 6,
+            "char_count": 39,
+            "token_count": 7,
+            "fertility": 1.167
+          },
+          {
+            "id": "q06",
+            "text": "How do you make tea?",
+            "word_count": 5,
+            "char_count": 20,
+            "token_count": 6,
+            "fertility": 1.2
+          },
+          {
+            "id": "q07",
+            "text": "What should you take with you on a rainy day?",
+            "word_count": 10,
+            "char_count": 45,
+            "token_count": 11,
+            "fertility": 1.1
+          },
+          {
+            "id": "q08",
+            "text": "What is solar energy?",
+            "word_count": 4,
+            "char_count": 21,
+            "token_count": 5,
+            "fertility": 1.25
+          },
+          {
+            "id": "q09",
+            "text": "What is the difference between weather and climate?",
+            "word_count": 8,
+            "char_count": 51,
+            "token_count": 9,
+            "fertility": 1.125
+          },
+          {
+            "id": "q10",
+            "text": "Why should paper be recycled?",
+            "word_count": 5,
+            "char_count": 29,
+            "token_count": 6,
+            "fertility": 1.2
+          }
+        ],
+        "multiplier_vs_english": 1.0
+      }
+    }
+  },
+  "Hindi": {
+    "sample_count": 10,
+    "word_count": 63,
+    "char_count": 308,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 296,
+        "fertility": 4.698,
+        "mean_tokens_per_sample": 29.6,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "भारत की राजधानी क्या है?",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 24,
+            "fertility": 4.8
+          },
+          {
+            "id": "q02",
+            "text": "पानी का रासायनिक सूत्र क्या है?",
+            "word_count": 6,
+            "char_count": 31,
+            "token_count": 28,
+            "fertility": 4.667
+          },
+          {
+            "id": "q03",
+            "text": "पौधों को सूर्य का प्रकाश क्यों चाहिए?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 34,
+            "fertility": 4.857
+          },
+          {
+            "id": "q04",
+            "text": "घर में पानी कैसे बचाया जा सकता है?",
+            "word_count": 8,
+            "char_count": 34,
+            "token_count": 33,
+            "fertility": 4.125
+          },
+          {
+            "id": "q05",
+            "text": "स्वस्थ नाश्ते के तीन विकल्प क्या हैं?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 35,
+            "fertility": 5.0
+          },
+          {
+            "id": "q06",
+            "text": "चाय कैसे बनाई जाती है?",
+            "word_count": 5,
+            "char_count": 22,
+            "token_count": 23,
+            "fertility": 4.6
+          },
+          {
+            "id": "q07",
+            "text": "बारिश के दिन क्या साथ ले जाना चाहिए?",
+            "word_count": 8,
+            "char_count": 36,
+            "token_count": 34,
+            "fertility": 4.25
+          },
+          {
+            "id": "q08",
+            "text": "सौर ऊर्जा क्या है?",
+            "word_count": 4,
+            "char_count": 18,
+            "token_count": 18,
+            "fertility": 4.5
+          },
+          {
+            "id": "q09",
+            "text": "मौसम और जलवायु में क्या अंतर है?",
+            "word_count": 7,
+            "char_count": 32,
+            "token_count": 32,
+            "fertility": 4.571
+          },
+          {
+            "id": "q10",
+            "text": "कागज़ का पुनर्चक्रण क्यों करना चाहिए?",
+            "word_count": 6,
+            "char_count": 37,
+            "token_count": 35,
+            "fertility": 5.833
+          }
+        ],
+        "multiplier_vs_english": 4.055
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 97,
+        "fertility": 1.54,
+        "mean_tokens_per_sample": 9.7,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "भारत की राजधानी क्या है?",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 6,
+            "fertility": 1.2
+          },
+          {
+            "id": "q02",
+            "text": "पानी का रासायनिक सूत्र क्या है?",
+            "word_count": 6,
+            "char_count": 31,
+            "token_count": 11,
+            "fertility": 1.833
+          },
+          {
+            "id": "q03",
+            "text": "पौधों को सूर्य का प्रकाश क्यों चाहिए?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 11,
+            "fertility": 1.571
+          },
+          {
+            "id": "q04",
+            "text": "घर में पानी कैसे बचाया जा सकता है?",
+            "word_count": 8,
+            "char_count": 34,
+            "token_count": 10,
+            "fertility": 1.25
+          },
+          {
+            "id": "q05",
+            "text": "स्वस्थ नाश्ते के तीन विकल्प क्या हैं?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 12,
+            "fertility": 1.714
+          },
+          {
+            "id": "q06",
+            "text": "चाय कैसे बनाई जाती है?",
+            "word_count": 5,
+            "char_count": 22,
+            "token_count": 7,
+            "fertility": 1.4
+          },
+          {
+            "id": "q07",
+            "text": "बारिश के दिन क्या साथ ले जाना चाहिए?",
+            "word_count": 8,
+            "char_count": 36,
+            "token_count": 10,
+            "fertility": 1.25
+          },
+          {
+            "id": "q08",
+            "text": "सौर ऊर्जा क्या है?",
+            "word_count": 4,
+            "char_count": 18,
+            "token_count": 6,
+            "fertility": 1.5
+          },
+          {
+            "id": "q09",
+            "text": "मौसम और जलवायु में क्या अंतर है?",
+            "word_count": 7,
+            "char_count": 32,
+            "token_count": 12,
+            "fertility": 1.714
+          },
+          {
+            "id": "q10",
+            "text": "कागज़ का पुनर्चक्रण क्यों करना चाहिए?",
+            "word_count": 6,
+            "char_count": 37,
+            "token_count": 12,
+            "fertility": 2.0
+          }
+        ],
+        "multiplier_vs_english": 1.329
+      },
+      "p50k (GPT-3)": {
+        "token_count": 464,
+        "fertility": 7.365,
+        "mean_tokens_per_sample": 46.4,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "भारत की राजधानी क्या है?",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 35,
+            "fertility": 7.0
+          },
+          {
+            "id": "q02",
+            "text": "पानी का रासायनिक सूत्र क्या है?",
+            "word_count": 6,
+            "char_count": 31,
+            "token_count": 46,
+            "fertility": 7.667
+          },
+          {
+            "id": "q03",
+            "text": "पौधों को सूर्य का प्रकाश क्यों चाहिए?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 58,
+            "fertility": 8.286
+          },
+          {
+            "id": "q04",
+            "text": "घर में पानी कैसे बचाया जा सकता है?",
+            "word_count": 8,
+            "char_count": 34,
+            "token_count": 48,
+            "fertility": 6.0
+          },
+          {
+            "id": "q05",
+            "text": "स्वस्थ नाश्ते के तीन विकल्प क्या हैं?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 59,
+            "fertility": 8.429
+          },
+          {
+            "id": "q06",
+            "text": "चाय कैसे बनाई जाती है?",
+            "word_count": 5,
+            "char_count": 22,
+            "token_count": 32,
+            "fertility": 6.4
+          },
+          {
+            "id": "q07",
+            "text": "बारिश के दिन क्या साथ ले जाना चाहिए?",
+            "word_count": 8,
+            "char_count": 36,
+            "token_count": 51,
+            "fertility": 6.375
+          },
+          {
+            "id": "q08",
+            "text": "सौर ऊर्जा क्या है?",
+            "word_count": 4,
+            "char_count": 18,
+            "token_count": 27,
+            "fertility": 6.75
+          },
+          {
+            "id": "q09",
+            "text": "मौसम और जलवायु में क्या अंतर है?",
+            "word_count": 7,
+            "char_count": 32,
+            "token_count": 49,
+            "fertility": 7.0
+          },
+          {
+            "id": "q10",
+            "text": "कागज़ का पुनर्चक्रण क्यों करना चाहिए?",
+            "word_count": 6,
+            "char_count": 37,
+            "token_count": 59,
+            "fertility": 9.833
+          }
+        ],
+        "multiplier_vs_english": 6.356
+      }
+    }
+  },
+  "Tamil": {
+    "sample_count": 10,
+    "word_count": 44,
+    "char_count": 344,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 480,
+        "fertility": 10.909,
+        "mean_tokens_per_sample": 48.0,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "இந்தியாவின் தலைநகரம் எது?",
+            "word_count": 3,
+            "char_count": 25,
+            "token_count": 36,
+            "fertility": 12.0
+          },
+          {
+            "id": "q02",
+            "text": "நீரின் வேதியியல் வாய்பாடு என்ன?",
+            "word_count": 4,
+            "char_count": 31,
+            "token_count": 42,
+            "fertility": 10.5
+          },
+          {
+            "id": "q03",
+            "text": "தாவரங்களுக்கு சூரிய ஒளி ஏன் தேவை?",
+            "word_count": 5,
+            "char_count": 33,
+            "token_count": 47,
+            "fertility": 9.4
+          },
+          {
+            "id": "q04",
+            "text": "வீட்டில் தண்ணீரை எப்படிச் சேமிக்கலாம்?",
+            "word_count": 4,
+            "char_count": 38,
+            "token_count": 52,
+            "fertility": 13.0
+          },
+          {
+            "id": "q05",
+            "text": "ஆரோக்கியமான காலை உணவுக்கு மூன்று உணவுகள் எவை?",
+            "word_count": 6,
+            "char_count": 45,
+            "token_count": 66,
+            "fertility": 11.0
+          },
+          {
+            "id": "q06",
+            "text": "தேநீர் செய்வது எப்படி?",
+            "word_count": 3,
+            "char_count": 22,
+            "token_count": 32,
+            "fertility": 10.667
+          },
+          {
+            "id": "q07",
+            "text": "மழை நாளில் எதை எடுத்துச் செல்ல வேண்டும்?",
+            "word_count": 6,
+            "char_count": 40,
+            "token_count": 55,
+            "fertility": 9.167
+          },
+          {
+            "id": "q08",
+            "text": "சூரிய ஆற்றல் என்றால் என்ன?",
+            "word_count": 4,
+            "char_count": 26,
+            "token_count": 35,
+            "fertility": 8.75
+          },
+          {
+            "id": "q09",
+            "text": "வானிலைக்கும் காலநிலைக்கும் என்ன வித்தியாசம்?",
+            "word_count": 4,
+            "char_count": 44,
+            "token_count": 60,
+            "fertility": 15.0
+          },
+          {
+            "id": "q10",
+            "text": "காகிதத்தை ஏன் மறுசுழற்சி செய்ய வேண்டும்?",
+            "word_count": 5,
+            "char_count": 40,
+            "token_count": 55,
+            "fertility": 11.0
+          }
+        ],
+        "multiplier_vs_english": 6.575
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 128,
+        "fertility": 2.909,
+        "mean_tokens_per_sample": 12.8,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "இந்தியாவின் தலைநகரம் எது?",
+            "word_count": 3,
+            "char_count": 25,
+            "token_count": 10,
+            "fertility": 3.333
+          },
+          {
+            "id": "q02",
+            "text": "நீரின் வேதியியல் வாய்பாடு என்ன?",
+            "word_count": 4,
+            "char_count": 31,
+            "token_count": 12,
+            "fertility": 3.0
+          },
+          {
+            "id": "q03",
+            "text": "தாவரங்களுக்கு சூரிய ஒளி ஏன் தேவை?",
+            "word_count": 5,
+            "char_count": 33,
+            "token_count": 15,
+            "fertility": 3.0
+          },
+          {
+            "id": "q04",
+            "text": "வீட்டில் தண்ணீரை எப்படிச் சேமிக்கலாம்?",
+            "word_count": 4,
+            "char_count": 38,
+            "token_count": 17,
+            "fertility": 4.25
+          },
+          {
+            "id": "q05",
+            "text": "ஆரோக்கியமான காலை உணவுக்கு மூன்று உணவுகள் எவை?",
+            "word_count": 6,
+            "char_count": 45,
+            "token_count": 16,
+            "fertility": 2.667
+          },
+          {
+            "id": "q06",
+            "text": "தேநீர் செய்வது எப்படி?",
+            "word_count": 3,
+            "char_count": 22,
+            "token_count": 7,
+            "fertility": 2.333
+          },
+          {
+            "id": "q07",
+            "text": "மழை நாளில் எதை எடுத்துச் செல்ல வேண்டும்?",
+            "word_count": 6,
+            "char_count": 40,
+            "token_count": 12,
+            "fertility": 2.0
+          },
+          {
+            "id": "q08",
+            "text": "சூரிய ஆற்றல் என்றால் என்ன?",
+            "word_count": 4,
+            "char_count": 26,
+            "token_count": 10,
+            "fertility": 2.5
+          },
+          {
+            "id": "q09",
+            "text": "வானிலைக்கும் காலநிலைக்கும் என்ன வித்தியாசம்?",
+            "word_count": 4,
+            "char_count": 44,
+            "token_count": 15,
+            "fertility": 3.75
+          },
+          {
+            "id": "q10",
+            "text": "காகிதத்தை ஏன் மறுசுழற்சி செய்ய வேண்டும்?",
+            "word_count": 5,
+            "char_count": 40,
+            "token_count": 14,
+            "fertility": 2.8
+          }
+        ],
+        "multiplier_vs_english": 1.753
+      },
+      "p50k (GPT-3)": {
+        "token_count": 944,
+        "fertility": 21.455,
+        "mean_tokens_per_sample": 94.4,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "இந்தியாவின் தலைநகரம் எது?",
+            "word_count": 3,
+            "char_count": 25,
+            "token_count": 69,
+            "fertility": 23.0
+          },
+          {
+            "id": "q02",
+            "text": "நீரின் வேதியியல் வாய்பாடு என்ன?",
+            "word_count": 4,
+            "char_count": 31,
+            "token_count": 85,
+            "fertility": 21.25
+          },
+          {
+            "id": "q03",
+            "text": "தாவரங்களுக்கு சூரிய ஒளி ஏன் தேவை?",
+            "word_count": 5,
+            "char_count": 33,
+            "token_count": 89,
+            "fertility": 17.8
+          },
+          {
+            "id": "q04",
+            "text": "வீட்டில் தண்ணீரை எப்படிச் சேமிக்கலாம்?",
+            "word_count": 4,
+            "char_count": 38,
+            "token_count": 106,
+            "fertility": 26.5
+          },
+          {
+            "id": "q05",
+            "text": "ஆரோக்கியமான காலை உணவுக்கு மூன்று உணவுகள் எவை?",
+            "word_count": 6,
+            "char_count": 45,
+            "token_count": 123,
+            "fertility": 20.5
+          },
+          {
+            "id": "q06",
+            "text": "தேநீர் செய்வது எப்படி?",
+            "word_count": 3,
+            "char_count": 22,
+            "token_count": 60,
+            "fertility": 20.0
+          },
+          {
+            "id": "q07",
+            "text": "மழை நாளில் எதை எடுத்துச் செல்ல வேண்டும்?",
+            "word_count": 6,
+            "char_count": 40,
+            "token_count": 108,
+            "fertility": 18.0
+          },
+          {
+            "id": "q08",
+            "text": "சூரிய ஆற்றல் என்றால் என்ன?",
+            "word_count": 4,
+            "char_count": 26,
+            "token_count": 70,
+            "fertility": 17.5
+          },
+          {
+            "id": "q09",
+            "text": "வானிலைக்கும் காலநிலைக்கும் என்ன வித்தியாசம்?",
+            "word_count": 4,
+            "char_count": 44,
+            "token_count": 124,
+            "fertility": 31.0
+          },
+          {
+            "id": "q10",
+            "text": "காகிதத்தை ஏன் மறுசுழற்சி செய்ய வேண்டும்?",
+            "word_count": 5,
+            "char_count": 40,
+            "token_count": 110,
+            "fertility": 22.0
+          }
+        ],
+        "multiplier_vs_english": 12.932
+      }
+    }
+  },
+  "Kannada": {
+    "sample_count": 10,
+    "word_count": 41,
+    "char_count": 313,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 554,
+        "fertility": 13.512,
+        "mean_tokens_per_sample": 55.4,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ಭಾರತದ ರಾಜಧಾನಿ ಯಾವುದು?",
+            "word_count": 3,
+            "char_count": 21,
+            "token_count": 37,
+            "fertility": 12.333
+          },
+          {
+            "id": "q02",
+            "text": "ನೀರಿನ ರಾಸಾಯನಿಕ ಸೂತ್ರ ಯಾವುದು?",
+            "word_count": 4,
+            "char_count": 28,
+            "token_count": 49,
+            "fertility": 12.25
+          },
+          {
+            "id": "q03",
+            "text": "ಸಸ್ಯಗಳಿಗೆ ಸೂರ್ಯನ ಬೆಳಕು ಏಕೆ ಬೇಕು?",
+            "word_count": 5,
+            "char_count": 32,
+            "token_count": 55,
+            "fertility": 11.0
+          },
+          {
+            "id": "q04",
+            "text": "ಮನೆಯಲ್ಲಿ ನೀರನ್ನು ಹೇಗೆ ಉಳಿಸಬಹುದು?",
+            "word_count": 4,
+            "char_count": 32,
+            "token_count": 57,
+            "fertility": 14.25
+          },
+          {
+            "id": "q05",
+            "text": "ಆರೋಗ್ಯಕರ ಉಪಾಹಾರಕ್ಕೆ ಮೂರು ಆಹಾರಗಳು ಯಾವುವು?",
+            "word_count": 5,
+            "char_count": 40,
+            "token_count": 71,
+            "fertility": 14.2
+          },
+          {
+            "id": "q06",
+            "text": "ಚಹಾವನ್ನು ಹೇಗೆ ತಯಾರಿಸಬೇಕು?",
+            "word_count": 3,
+            "char_count": 25,
+            "token_count": 45,
+            "fertility": 15.0
+          },
+          {
+            "id": "q07",
+            "text": "ಮಳೆಯ ದಿನ ಏನನ್ನು ಜೊತೆಯಲ್ಲಿ ತೆಗೆದುಕೊಂಡು ಹೋಗಬೇಕು?",
+            "word_count": 6,
+            "char_count": 46,
+            "token_count": 81,
+            "fertility": 13.5
+          },
+          {
+            "id": "q08",
+            "text": "ಸೌರಶಕ್ತಿ ಎಂದರೇನು?",
+            "word_count": 2,
+            "char_count": 17,
+            "token_count": 31,
+            "fertility": 15.5
+          },
+          {
+            "id": "q09",
+            "text": "ಹವಾಮಾನ ಮತ್ತು ವಾಯುಗುಣದ ನಡುವಿನ ವ್ಯತ್ಯಾಸವೇನು?",
+            "word_count": 5,
+            "char_count": 42,
+            "token_count": 75,
+            "fertility": 15.0
+          },
+          {
+            "id": "q10",
+            "text": "ಕಾಗದವನ್ನು ಏಕೆ ಮರುಬಳಕೆ ಮಾಡಬೇಕು?",
+            "word_count": 4,
+            "char_count": 30,
+            "token_count": 53,
+            "fertility": 13.25
+          }
+        ],
+        "multiplier_vs_english": 7.589
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 132,
+        "fertility": 3.22,
+        "mean_tokens_per_sample": 13.2,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ಭಾರತದ ರಾಜಧಾನಿ ಯಾವುದು?",
+            "word_count": 3,
+            "char_count": 21,
+            "token_count": 9,
+            "fertility": 3.0
+          },
+          {
+            "id": "q02",
+            "text": "ನೀರಿನ ರಾಸಾಯನಿಕ ಸೂತ್ರ ಯಾವುದು?",
+            "word_count": 4,
+            "char_count": 28,
+            "token_count": 13,
+            "fertility": 3.25
+          },
+          {
+            "id": "q03",
+            "text": "ಸಸ್ಯಗಳಿಗೆ ಸೂರ್ಯನ ಬೆಳಕು ಏಕೆ ಬೇಕು?",
+            "word_count": 5,
+            "char_count": 32,
+            "token_count": 14,
+            "fertility": 2.8
+          },
+          {
+            "id": "q04",
+            "text": "ಮನೆಯಲ್ಲಿ ನೀರನ್ನು ಹೇಗೆ ಉಳಿಸಬಹುದು?",
+            "word_count": 4,
+            "char_count": 32,
+            "token_count": 10,
+            "fertility": 2.5
+          },
+          {
+            "id": "q05",
+            "text": "ಆರೋಗ್ಯಕರ ಉಪಾಹಾರಕ್ಕೆ ಮೂರು ಆಹಾರಗಳು ಯಾವುವು?",
+            "word_count": 5,
+            "char_count": 40,
+            "token_count": 16,
+            "fertility": 3.2
+          },
+          {
+            "id": "q06",
+            "text": "ಚಹಾವನ್ನು ಹೇಗೆ ತಯಾರಿಸಬೇಕು?",
+            "word_count": 3,
+            "char_count": 25,
+            "token_count": 12,
+            "fertility": 4.0
+          },
+          {
+            "id": "q07",
+            "text": "ಮಳೆಯ ದಿನ ಏನನ್ನು ಜೊತೆಯಲ್ಲಿ ತೆಗೆದುಕೊಂಡು ಹೋಗಬೇಕು?",
+            "word_count": 6,
+            "char_count": 46,
+            "token_count": 15,
+            "fertility": 2.5
+          },
+          {
+            "id": "q08",
+            "text": "ಸೌರಶಕ್ತಿ ಎಂದರೇನು?",
+            "word_count": 2,
+            "char_count": 17,
+            "token_count": 10,
+            "fertility": 5.0
+          },
+          {
+            "id": "q09",
+            "text": "ಹವಾಮಾನ ಮತ್ತು ವಾಯುಗುಣದ ನಡುವಿನ ವ್ಯತ್ಯಾಸವೇನು?",
+            "word_count": 5,
+            "char_count": 42,
+            "token_count": 19,
+            "fertility": 3.8
+          },
+          {
+            "id": "q10",
+            "text": "ಕಾಗದವನ್ನು ಏಕೆ ಮರುಬಳಕೆ ಮಾಡಬೇಕು?",
+            "word_count": 4,
+            "char_count": 30,
+            "token_count": 14,
+            "fertility": 3.5
+          }
+        ],
+        "multiplier_vs_english": 1.808
+      },
+      "p50k (GPT-3)": {
+        "token_count": 838,
+        "fertility": 20.439,
+        "mean_tokens_per_sample": 83.8,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ಭಾರತದ ರಾಜಧಾನಿ ಯಾವುದು?",
+            "word_count": 3,
+            "char_count": 21,
+            "token_count": 53,
+            "fertility": 17.667
+          },
+          {
+            "id": "q02",
+            "text": "ನೀರಿನ ರಾಸಾಯನಿಕ ಸೂತ್ರ ಯಾವುದು?",
+            "word_count": 4,
+            "char_count": 28,
+            "token_count": 73,
+            "fertility": 18.25
+          },
+          {
+            "id": "q03",
+            "text": "ಸಸ್ಯಗಳಿಗೆ ಸೂರ್ಯನ ಬೆಳಕು ಏಕೆ ಬೇಕು?",
+            "word_count": 5,
+            "char_count": 32,
+            "token_count": 86,
+            "fertility": 17.2
+          },
+          {
+            "id": "q04",
+            "text": "ಮನೆಯಲ್ಲಿ ನೀರನ್ನು ಹೇಗೆ ಉಳಿಸಬಹುದು?",
+            "word_count": 4,
+            "char_count": 32,
+            "token_count": 88,
+            "fertility": 22.0
+          },
+          {
+            "id": "q05",
+            "text": "ಆರೋಗ್ಯಕರ ಉಪಾಹಾರಕ್ಕೆ ಮೂರು ಆಹಾರಗಳು ಯಾವುವು?",
+            "word_count": 5,
+            "char_count": 40,
+            "token_count": 106,
+            "fertility": 21.2
+          },
+          {
+            "id": "q06",
+            "text": "ಚಹಾವನ್ನು ಹೇಗೆ ತಯಾರಿಸಬೇಕು?",
+            "word_count": 3,
+            "char_count": 25,
+            "token_count": 67,
+            "fertility": 22.333
+          },
+          {
+            "id": "q07",
+            "text": "ಮಳೆಯ ದಿನ ಏನನ್ನು ಜೊತೆಯಲ್ಲಿ ತೆಗೆದುಕೊಂಡು ಹೋಗಬೇಕು?",
+            "word_count": 6,
+            "char_count": 46,
+            "token_count": 126,
+            "fertility": 21.0
+          },
+          {
+            "id": "q08",
+            "text": "ಸೌರಶಕ್ತಿ ಎಂದರೇನು?",
+            "word_count": 2,
+            "char_count": 17,
+            "token_count": 47,
+            "fertility": 23.5
+          },
+          {
+            "id": "q09",
+            "text": "ಹವಾಮಾನ ಮತ್ತು ವಾಯುಗುಣದ ನಡುವಿನ ವ್ಯತ್ಯಾಸವೇನು?",
+            "word_count": 5,
+            "char_count": 42,
+            "token_count": 112,
+            "fertility": 22.4
+          },
+          {
+            "id": "q10",
+            "text": "ಕಾಗದವನ್ನು ಏಕೆ ಮರುಬಳಕೆ ಮಾಡಬೇಕು?",
+            "word_count": 4,
+            "char_count": 30,
+            "token_count": 80,
+            "fertility": 20.0
+          }
+        ],
+        "multiplier_vs_english": 11.479
+      }
+    }
+  },
+  "Telugu": {
+    "sample_count": 10,
+    "word_count": 44,
+    "char_count": 315,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 552,
+        "fertility": 12.545,
+        "mean_tokens_per_sample": 55.2,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "భారతదేశ రాజధాని ఏది?",
+            "word_count": 3,
+            "char_count": 20,
+            "token_count": 35,
+            "fertility": 11.667
+          },
+          {
+            "id": "q02",
+            "text": "నీటి రసాయన సూత్రం ఏమిటి?",
+            "word_count": 4,
+            "char_count": 24,
+            "token_count": 41,
+            "fertility": 10.25
+          },
+          {
+            "id": "q03",
+            "text": "మొక్కలకు సూర్యరశ్మి ఎందుకు అవసరం?",
+            "word_count": 4,
+            "char_count": 33,
+            "token_count": 59,
+            "fertility": 14.75
+          },
+          {
+            "id": "q04",
+            "text": "ఇంట్లో నీటిని ఎలా ఆదా చేయవచ్చు?",
+            "word_count": 5,
+            "char_count": 31,
+            "token_count": 53,
+            "fertility": 10.6
+          },
+          {
+            "id": "q05",
+            "text": "ఆరోగ్యకరమైన అల్పాహారానికి మూడు ఆహారాలు ఏవి?",
+            "word_count": 5,
+            "char_count": 43,
+            "token_count": 77,
+            "fertility": 15.4
+          },
+          {
+            "id": "q06",
+            "text": "టీని ఎలా తయారు చేయాలి?",
+            "word_count": 4,
+            "char_count": 22,
+            "token_count": 37,
+            "fertility": 9.25
+          },
+          {
+            "id": "q07",
+            "text": "వర్షం పడే రోజున ఏమి వెంట తీసుకెళ్లాలి?",
+            "word_count": 6,
+            "char_count": 38,
+            "token_count": 65,
+            "fertility": 10.833
+          },
+          {
+            "id": "q08",
+            "text": "సౌరశక్తి అంటే ఏమిటి?",
+            "word_count": 3,
+            "char_count": 20,
+            "token_count": 35,
+            "fertility": 11.667
+          },
+          {
+            "id": "q09",
+            "text": "వాతావరణం మరియు శీతోష్ణస్థితి మధ్య తేడా ఏమిటి?",
+            "word_count": 6,
+            "char_count": 45,
+            "token_count": 79,
+            "fertility": 13.167
+          },
+          {
+            "id": "q10",
+            "text": "కాగితాన్ని ఎందుకు పునర్వినియోగం చేయాలి?",
+            "word_count": 4,
+            "char_count": 39,
+            "token_count": 71,
+            "fertility": 17.75
+          }
+        ],
+        "multiplier_vs_english": 7.562
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 144,
+        "fertility": 3.273,
+        "mean_tokens_per_sample": 14.4,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "భారతదేశ రాజధాని ఏది?",
+            "word_count": 3,
+            "char_count": 20,
+            "token_count": 10,
+            "fertility": 3.333
+          },
+          {
+            "id": "q02",
+            "text": "నీటి రసాయన సూత్రం ఏమిటి?",
+            "word_count": 4,
+            "char_count": 24,
+            "token_count": 14,
+            "fertility": 3.5
+          },
+          {
+            "id": "q03",
+            "text": "మొక్కలకు సూర్యరశ్మి ఎందుకు అవసరం?",
+            "word_count": 4,
+            "char_count": 33,
+            "token_count": 15,
+            "fertility": 3.75
+          },
+          {
+            "id": "q04",
+            "text": "ఇంట్లో నీటిని ఎలా ఆదా చేయవచ్చు?",
+            "word_count": 5,
+            "char_count": 31,
+            "token_count": 13,
+            "fertility": 2.6
+          },
+          {
+            "id": "q05",
+            "text": "ఆరోగ్యకరమైన అల్పాహారానికి మూడు ఆహారాలు ఏవి?",
+            "word_count": 5,
+            "char_count": 43,
+            "token_count": 19,
+            "fertility": 3.8
+          },
+          {
+            "id": "q06",
+            "text": "టీని ఎలా తయారు చేయాలి?",
+            "word_count": 4,
+            "char_count": 22,
+            "token_count": 8,
+            "fertility": 2.0
+          },
+          {
+            "id": "q07",
+            "text": "వర్షం పడే రోజున ఏమి వెంట తీసుకెళ్లాలి?",
+            "word_count": 6,
+            "char_count": 38,
+            "token_count": 16,
+            "fertility": 2.667
+          },
+          {
+            "id": "q08",
+            "text": "సౌరశక్తి అంటే ఏమిటి?",
+            "word_count": 3,
+            "char_count": 20,
+            "token_count": 11,
+            "fertility": 3.667
+          },
+          {
+            "id": "q09",
+            "text": "వాతావరణం మరియు శీతోష్ణస్థితి మధ్య తేడా ఏమిటి?",
+            "word_count": 6,
+            "char_count": 45,
+            "token_count": 22,
+            "fertility": 3.667
+          },
+          {
+            "id": "q10",
+            "text": "కాగితాన్ని ఎందుకు పునర్వినియోగం చేయాలి?",
+            "word_count": 4,
+            "char_count": 39,
+            "token_count": 16,
+            "fertility": 4.0
+          }
+        ],
+        "multiplier_vs_english": 1.973
+      },
+      "p50k (GPT-3)": {
+        "token_count": 857,
+        "fertility": 19.477,
+        "mean_tokens_per_sample": 85.7,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "భారతదేశ రాజధాని ఏది?",
+            "word_count": 3,
+            "char_count": 20,
+            "token_count": 54,
+            "fertility": 18.0
+          },
+          {
+            "id": "q02",
+            "text": "నీటి రసాయన సూత్రం ఏమిటి?",
+            "word_count": 4,
+            "char_count": 24,
+            "token_count": 64,
+            "fertility": 16.0
+          },
+          {
+            "id": "q03",
+            "text": "మొక్కలకు సూర్యరశ్మి ఎందుకు అవసరం?",
+            "word_count": 4,
+            "char_count": 33,
+            "token_count": 91,
+            "fertility": 22.75
+          },
+          {
+            "id": "q04",
+            "text": "ఇంట్లో నీటిని ఎలా ఆదా చేయవచ్చు?",
+            "word_count": 5,
+            "char_count": 31,
+            "token_count": 83,
+            "fertility": 16.6
+          },
+          {
+            "id": "q05",
+            "text": "ఆరోగ్యకరమైన అల్పాహారానికి మూడు ఆహారాలు ఏవి?",
+            "word_count": 5,
+            "char_count": 43,
+            "token_count": 119,
+            "fertility": 23.8
+          },
+          {
+            "id": "q06",
+            "text": "టీని ఎలా తయారు చేయాలి?",
+            "word_count": 4,
+            "char_count": 22,
+            "token_count": 58,
+            "fertility": 14.5
+          },
+          {
+            "id": "q07",
+            "text": "వర్షం పడే రోజున ఏమి వెంట తీసుకెళ్లాలి?",
+            "word_count": 6,
+            "char_count": 38,
+            "token_count": 102,
+            "fertility": 17.0
+          },
+          {
+            "id": "q08",
+            "text": "సౌరశక్తి అంటే ఏమిటి?",
+            "word_count": 3,
+            "char_count": 20,
+            "token_count": 54,
+            "fertility": 18.0
+          },
+          {
+            "id": "q09",
+            "text": "వాతావరణం మరియు శీతోష్ణస్థితి మధ్య తేడా ఏమిటి?",
+            "word_count": 6,
+            "char_count": 45,
+            "token_count": 123,
+            "fertility": 20.5
+          },
+          {
+            "id": "q10",
+            "text": "కాగితాన్ని ఎందుకు పునర్వినియోగం చేయాలి?",
+            "word_count": 4,
+            "char_count": 39,
+            "token_count": 109,
+            "fertility": 27.25
+          }
+        ],
+        "multiplier_vs_english": 11.74
+      }
+    }
+  },
+  "Bengali": {
+    "sample_count": 10,
+    "word_count": 49,
+    "char_count": 291,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 361,
+        "fertility": 7.367,
+        "mean_tokens_per_sample": 36.1,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ভারতের রাজধানী কী?",
+            "word_count": 3,
+            "char_count": 18,
+            "token_count": 23,
+            "fertility": 7.667
+          },
+          {
+            "id": "q02",
+            "text": "জলের রাসায়নিক সংকেত কী?",
+            "word_count": 4,
+            "char_count": 24,
+            "token_count": 31,
+            "fertility": 7.75
+          },
+          {
+            "id": "q03",
+            "text": "গাছের সূর্যের আলো কেন দরকার?",
+            "word_count": 5,
+            "char_count": 28,
+            "token_count": 33,
+            "fertility": 6.6
+          },
+          {
+            "id": "q04",
+            "text": "বাড়িতে কীভাবে জল সাশ্রয় করা যায়?",
+            "word_count": 6,
+            "char_count": 35,
+            "token_count": 44,
+            "fertility": 7.333
+          },
+          {
+            "id": "q05",
+            "text": "স্বাস্থ্যকর প্রাতরাশের তিনটি খাবার কী কী?",
+            "word_count": 6,
+            "char_count": 41,
+            "token_count": 46,
+            "fertility": 7.667
+          },
+          {
+            "id": "q06",
+            "text": "চা কীভাবে তৈরি করতে হয়?",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 31,
+            "fertility": 6.2
+          },
+          {
+            "id": "q07",
+            "text": "বৃষ্টির দিনে কী সঙ্গে নিয়ে যাওয়া উচিত?",
+            "word_count": 7,
+            "char_count": 40,
+            "token_count": 49,
+            "fertility": 7.0
+          },
+          {
+            "id": "q08",
+            "text": "সৌরশক্তি কী?",
+            "word_count": 2,
+            "char_count": 12,
+            "token_count": 17,
+            "fertility": 8.5
+          },
+          {
+            "id": "q09",
+            "text": "আবহাওয়া ও জলবায়ুর মধ্যে পার্থক্য কী?",
+            "word_count": 6,
+            "char_count": 38,
+            "token_count": 50,
+            "fertility": 8.333
+          },
+          {
+            "id": "q10",
+            "text": "কাগজ পুনর্ব্যবহার করা উচিত কেন?",
+            "word_count": 5,
+            "char_count": 31,
+            "token_count": 37,
+            "fertility": 7.4
+          }
+        ],
+        "multiplier_vs_english": 4.945
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 110,
+        "fertility": 2.245,
+        "mean_tokens_per_sample": 11.0,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ভারতের রাজধানী কী?",
+            "word_count": 3,
+            "char_count": 18,
+            "token_count": 6,
+            "fertility": 2.0
+          },
+          {
+            "id": "q02",
+            "text": "জলের রাসায়নিক সংকেত কী?",
+            "word_count": 4,
+            "char_count": 24,
+            "token_count": 9,
+            "fertility": 2.25
+          },
+          {
+            "id": "q03",
+            "text": "গাছের সূর্যের আলো কেন দরকার?",
+            "word_count": 5,
+            "char_count": 28,
+            "token_count": 11,
+            "fertility": 2.2
+          },
+          {
+            "id": "q04",
+            "text": "বাড়িতে কীভাবে জল সাশ্রয় করা যায়?",
+            "word_count": 6,
+            "char_count": 35,
+            "token_count": 13,
+            "fertility": 2.167
+          },
+          {
+            "id": "q05",
+            "text": "স্বাস্থ্যকর প্রাতরাশের তিনটি খাবার কী কী?",
+            "word_count": 6,
+            "char_count": 41,
+            "token_count": 15,
+            "fertility": 2.5
+          },
+          {
+            "id": "q06",
+            "text": "চা কীভাবে তৈরি করতে হয়?",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 8,
+            "fertility": 1.6
+          },
+          {
+            "id": "q07",
+            "text": "বৃষ্টির দিনে কী সঙ্গে নিয়ে যাওয়া উচিত?",
+            "word_count": 7,
+            "char_count": 40,
+            "token_count": 11,
+            "fertility": 1.571
+          },
+          {
+            "id": "q08",
+            "text": "সৌরশক্তি কী?",
+            "word_count": 2,
+            "char_count": 12,
+            "token_count": 8,
+            "fertility": 4.0
+          },
+          {
+            "id": "q09",
+            "text": "আবহাওয়া ও জলবায়ুর মধ্যে পার্থক্য কী?",
+            "word_count": 6,
+            "char_count": 38,
+            "token_count": 17,
+            "fertility": 2.833
+          },
+          {
+            "id": "q10",
+            "text": "কাগজ পুনর্ব্যবহার করা উচিত কেন?",
+            "word_count": 5,
+            "char_count": 31,
+            "token_count": 12,
+            "fertility": 2.4
+          }
+        ],
+        "multiplier_vs_english": 1.507
+      },
+      "p50k (GPT-3)": {
+        "token_count": 580,
+        "fertility": 11.837,
+        "mean_tokens_per_sample": 58.0,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ভারতের রাজধানী কী?",
+            "word_count": 3,
+            "char_count": 18,
+            "token_count": 36,
+            "fertility": 12.0
+          },
+          {
+            "id": "q02",
+            "text": "জলের রাসায়নিক সংকেত কী?",
+            "word_count": 4,
+            "char_count": 24,
+            "token_count": 47,
+            "fertility": 11.75
+          },
+          {
+            "id": "q03",
+            "text": "গাছের সূর্যের আলো কেন দরকার?",
+            "word_count": 5,
+            "char_count": 28,
+            "token_count": 57,
+            "fertility": 11.4
+          },
+          {
+            "id": "q04",
+            "text": "বাড়িতে কীভাবে জল সাশ্রয় করা যায়?",
+            "word_count": 6,
+            "char_count": 35,
+            "token_count": 68,
+            "fertility": 11.333
+          },
+          {
+            "id": "q05",
+            "text": "স্বাস্থ্যকর প্রাতরাশের তিনটি খাবার কী কী?",
+            "word_count": 6,
+            "char_count": 41,
+            "token_count": 83,
+            "fertility": 13.833
+          },
+          {
+            "id": "q06",
+            "text": "চা কীভাবে তৈরি করতে হয়?",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 47,
+            "fertility": 9.4
+          },
+          {
+            "id": "q07",
+            "text": "বৃষ্টির দিনে কী সঙ্গে নিয়ে যাওয়া উচিত?",
+            "word_count": 7,
+            "char_count": 40,
+            "token_count": 80,
+            "fertility": 11.429
+          },
+          {
+            "id": "q08",
+            "text": "সৌরশক্তি কী?",
+            "word_count": 2,
+            "char_count": 12,
+            "token_count": 25,
+            "fertility": 12.5
+          },
+          {
+            "id": "q09",
+            "text": "আবহাওয়া ও জলবায়ুর মধ্যে পার্থক্য কী?",
+            "word_count": 6,
+            "char_count": 38,
+            "token_count": 76,
+            "fertility": 12.667
+          },
+          {
+            "id": "q10",
+            "text": "কাগজ পুনর্ব্যবহার করা উচিত কেন?",
+            "word_count": 5,
+            "char_count": 31,
+            "token_count": 61,
+            "fertility": 12.2
+          }
+        ],
+        "multiplier_vs_english": 7.945
+      }
+    }
+  },
+  "Malayalam": {
+    "sample_count": 10,
+    "word_count": 39,
+    "char_count": 385,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 620,
+        "fertility": 15.897,
+        "mean_tokens_per_sample": 62.0,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ഇന്ത്യയുടെ തലസ്ഥാനം ഏതാണ്?",
+            "word_count": 3,
+            "char_count": 26,
+            "token_count": 42,
+            "fertility": 14.0
+          },
+          {
+            "id": "q02",
+            "text": "വെള്ളത്തിന്റെ രാസസൂത്രം എന്താണ്?",
+            "word_count": 3,
+            "char_count": 32,
+            "token_count": 50,
+            "fertility": 16.667
+          },
+          {
+            "id": "q03",
+            "text": "സസ്യങ്ങൾക്ക് സൂര്യപ്രകാശം ആവശ്യമായത് എന്തുകൊണ്ട്?",
+            "word_count": 4,
+            "char_count": 49,
+            "token_count": 75,
+            "fertility": 18.75
+          },
+          {
+            "id": "q04",
+            "text": "വീട്ടിൽ വെള്ളം എങ്ങനെ സംരക്ഷിക്കാം?",
+            "word_count": 4,
+            "char_count": 35,
+            "token_count": 56,
+            "fertility": 14.0
+          },
+          {
+            "id": "q05",
+            "text": "ആരോഗ്യകരമായ പ്രഭാതഭക്ഷണത്തിന് മൂന്ന് ഭക്ഷണങ്ങൾ ഏതൊക്കെയാണ്?",
+            "word_count": 5,
+            "char_count": 59,
+            "token_count": 94,
+            "fertility": 18.8
+          },
+          {
+            "id": "q06",
+            "text": "ചായ എങ്ങനെ ഉണ്ടാക്കാം?",
+            "word_count": 3,
+            "char_count": 22,
+            "token_count": 35,
+            "fertility": 11.667
+          },
+          {
+            "id": "q07",
+            "text": "മഴയുള്ള ദിവസം എന്താണ് കൂടെ കൊണ്ടുപോകേണ്ടത്?",
+            "word_count": 5,
+            "char_count": 43,
+            "token_count": 71,
+            "fertility": 14.2
+          },
+          {
+            "id": "q08",
+            "text": "സൗരോർജം എന്താണ്?",
+            "word_count": 2,
+            "char_count": 16,
+            "token_count": 27,
+            "fertility": 13.5
+          },
+          {
+            "id": "q09",
+            "text": "കാലാവസ്ഥയും ദീർഘകാല കാലാവസ്ഥയും തമ്മിലുള്ള വ്യത്യാസം എന്താണ്?",
+            "word_count": 6,
+            "char_count": 61,
+            "token_count": 101,
+            "fertility": 16.833
+          },
+          {
+            "id": "q10",
+            "text": "കടലാസ് പുനരുപയോഗം ചെയ്യേണ്ടത് എന്തുകൊണ്ട്?",
+            "word_count": 4,
+            "char_count": 42,
+            "token_count": 69,
+            "fertility": 17.25
+          }
+        ],
+        "multiplier_vs_english": 8.493
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 145,
+        "fertility": 3.718,
+        "mean_tokens_per_sample": 14.5,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ഇന്ത്യയുടെ തലസ്ഥാനം ഏതാണ്?",
+            "word_count": 3,
+            "char_count": 26,
+            "token_count": 9,
+            "fertility": 3.0
+          },
+          {
+            "id": "q02",
+            "text": "വെള്ളത്തിന്റെ രാസസൂത്രം എന്താണ്?",
+            "word_count": 3,
+            "char_count": 32,
+            "token_count": 13,
+            "fertility": 4.333
+          },
+          {
+            "id": "q03",
+            "text": "സസ്യങ്ങൾക്ക് സൂര്യപ്രകാശം ആവശ്യമായത് എന്തുകൊണ്ട്?",
+            "word_count": 4,
+            "char_count": 49,
+            "token_count": 17,
+            "fertility": 4.25
+          },
+          {
+            "id": "q04",
+            "text": "വീട്ടിൽ വെള്ളം എങ്ങനെ സംരക്ഷിക്കാം?",
+            "word_count": 4,
+            "char_count": 35,
+            "token_count": 14,
+            "fertility": 3.5
+          },
+          {
+            "id": "q05",
+            "text": "ആരോഗ്യകരമായ പ്രഭാതഭക്ഷണത്തിന് മൂന്ന് ഭക്ഷണങ്ങൾ ഏതൊക്കെയാണ്?",
+            "word_count": 5,
+            "char_count": 59,
+            "token_count": 22,
+            "fertility": 4.4
+          },
+          {
+            "id": "q06",
+            "text": "ചായ എങ്ങനെ ഉണ്ടാക്കാം?",
+            "word_count": 3,
+            "char_count": 22,
+            "token_count": 8,
+            "fertility": 2.667
+          },
+          {
+            "id": "q07",
+            "text": "മഴയുള്ള ദിവസം എന്താണ് കൂടെ കൊണ്ടുപോകേണ്ടത്?",
+            "word_count": 5,
+            "char_count": 43,
+            "token_count": 15,
+            "fertility": 3.0
+          },
+          {
+            "id": "q08",
+            "text": "സൗരോർജം എന്താണ്?",
+            "word_count": 2,
+            "char_count": 16,
+            "token_count": 9,
+            "fertility": 4.5
+          },
+          {
+            "id": "q09",
+            "text": "കാലാവസ്ഥയും ദീർഘകാല കാലാവസ്ഥയും തമ്മിലുള്ള വ്യത്യാസം എന്താണ്?",
+            "word_count": 6,
+            "char_count": 61,
+            "token_count": 22,
+            "fertility": 3.667
+          },
+          {
+            "id": "q10",
+            "text": "കടലാസ് പുനരുപയോഗം ചെയ്യേണ്ടത് എന്തുകൊണ്ട്?",
+            "word_count": 4,
+            "char_count": 42,
+            "token_count": 16,
+            "fertility": 4.0
+          }
+        ],
+        "multiplier_vs_english": 1.986
+      },
+      "p50k (GPT-3)": {
+        "token_count": 1077,
+        "fertility": 27.615,
+        "mean_tokens_per_sample": 107.7,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ഇന്ത്യയുടെ തലസ്ഥാനം ഏതാണ്?",
+            "word_count": 3,
+            "char_count": 26,
+            "token_count": 72,
+            "fertility": 24.0
+          },
+          {
+            "id": "q02",
+            "text": "വെള്ളത്തിന്റെ രാസസൂത്രം എന്താണ്?",
+            "word_count": 3,
+            "char_count": 32,
+            "token_count": 90,
+            "fertility": 30.0
+          },
+          {
+            "id": "q03",
+            "text": "സസ്യങ്ങൾക്ക് സൂര്യപ്രകാശം ആവശ്യമായത് എന്തുകൊണ്ട്?",
+            "word_count": 4,
+            "char_count": 49,
+            "token_count": 139,
+            "fertility": 34.75
+          },
+          {
+            "id": "q04",
+            "text": "വീട്ടിൽ വെള്ളം എങ്ങനെ സംരക്ഷിക്കാം?",
+            "word_count": 4,
+            "char_count": 35,
+            "token_count": 97,
+            "fertility": 24.25
+          },
+          {
+            "id": "q05",
+            "text": "ആരോഗ്യകരമായ പ്രഭാതഭക്ഷണത്തിന് മൂന്ന് ഭക്ഷണങ്ങൾ ഏതൊക്കെയാണ്?",
+            "word_count": 5,
+            "char_count": 59,
+            "token_count": 167,
+            "fertility": 33.4
+          },
+          {
+            "id": "q06",
+            "text": "ചായ എങ്ങനെ ഉണ്ടാക്കാം?",
+            "word_count": 3,
+            "char_count": 22,
+            "token_count": 60,
+            "fertility": 20.0
+          },
+          {
+            "id": "q07",
+            "text": "മഴയുള്ള ദിവസം എന്താണ് കൂടെ കൊണ്ടുപോകേണ്ടത്?",
+            "word_count": 5,
+            "char_count": 43,
+            "token_count": 119,
+            "fertility": 23.8
+          },
+          {
+            "id": "q08",
+            "text": "സൗരോർജം എന്താണ്?",
+            "word_count": 2,
+            "char_count": 16,
+            "token_count": 44,
+            "fertility": 22.0
+          },
+          {
+            "id": "q09",
+            "text": "കാലാവസ്ഥയും ദീർഘകാല കാലാവസ്ഥയും തമ്മിലുള്ള വ്യത്യാസം എന്താണ്?",
+            "word_count": 6,
+            "char_count": 61,
+            "token_count": 171,
+            "fertility": 28.5
+          },
+          {
+            "id": "q10",
+            "text": "കടലാസ് പുനരുപയോഗം ചെയ്യേണ്ടത് എന്തുകൊണ്ട്?",
+            "word_count": 4,
+            "char_count": 42,
+            "token_count": 118,
+            "fertility": 29.5
+          }
+        ],
+        "multiplier_vs_english": 14.753
+      }
+    }
+  },
+  "Gujarati": {
+    "sample_count": 10,
+    "word_count": 56,
+    "char_count": 305,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 508,
+        "fertility": 9.071,
+        "mean_tokens_per_sample": 50.8,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ભારતની રાજધાની કઈ છે?",
+            "word_count": 4,
+            "char_count": 21,
+            "token_count": 35,
+            "fertility": 8.75
+          },
+          {
+            "id": "q02",
+            "text": "પાણીનું રાસાયણિક સૂત્ર શું છે?",
+            "word_count": 5,
+            "char_count": 30,
+            "token_count": 51,
+            "fertility": 10.2
+          },
+          {
+            "id": "q03",
+            "text": "છોડને સૂર્યપ્રકાશની જરૂર શા માટે છે?",
+            "word_count": 6,
+            "char_count": 36,
+            "token_count": 61,
+            "fertility": 10.167
+          },
+          {
+            "id": "q04",
+            "text": "ઘરમાં પાણી કેવી રીતે બચાવી શકાય?",
+            "word_count": 6,
+            "char_count": 32,
+            "token_count": 53,
+            "fertility": 8.833
+          },
+          {
+            "id": "q05",
+            "text": "સ્વસ્થ નાસ્તા માટેના ત્રણ ખોરાક કયા છે?",
+            "word_count": 7,
+            "char_count": 39,
+            "token_count": 65,
+            "fertility": 9.286
+          },
+          {
+            "id": "q06",
+            "text": "ચા કેવી રીતે બનાવવી?",
+            "word_count": 4,
+            "char_count": 20,
+            "token_count": 33,
+            "fertility": 8.25
+          },
+          {
+            "id": "q07",
+            "text": "વરસાદના દિવસે સાથે શું લઈ જવું જોઈએ?",
+            "word_count": 7,
+            "char_count": 36,
+            "token_count": 59,
+            "fertility": 8.429
+          },
+          {
+            "id": "q08",
+            "text": "સૌર ઊર્જા શું છે?",
+            "word_count": 4,
+            "char_count": 17,
+            "token_count": 27,
+            "fertility": 6.75
+          },
+          {
+            "id": "q09",
+            "text": "હવામાન અને આબોહવા વચ્ચે શું તફાવત છે?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 61,
+            "fertility": 8.714
+          },
+          {
+            "id": "q10",
+            "text": "કાગળનું પુનઃચક્રણ શા માટે કરવું જોઈએ?",
+            "word_count": 6,
+            "char_count": 37,
+            "token_count": 63,
+            "fertility": 10.5
+          }
+        ],
+        "multiplier_vs_english": 6.959
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 125,
+        "fertility": 2.232,
+        "mean_tokens_per_sample": 12.5,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ભારતની રાજધાની કઈ છે?",
+            "word_count": 4,
+            "char_count": 21,
+            "token_count": 10,
+            "fertility": 2.5
+          },
+          {
+            "id": "q02",
+            "text": "પાણીનું રાસાયણિક સૂત્ર શું છે?",
+            "word_count": 5,
+            "char_count": 30,
+            "token_count": 13,
+            "fertility": 2.6
+          },
+          {
+            "id": "q03",
+            "text": "છોડને સૂર્યપ્રકાશની જરૂર શા માટે છે?",
+            "word_count": 6,
+            "char_count": 36,
+            "token_count": 15,
+            "fertility": 2.5
+          },
+          {
+            "id": "q04",
+            "text": "ઘરમાં પાણી કેવી રીતે બચાવી શકાય?",
+            "word_count": 6,
+            "char_count": 32,
+            "token_count": 9,
+            "fertility": 1.5
+          },
+          {
+            "id": "q05",
+            "text": "સ્વસ્થ નાસ્તા માટેના ત્રણ ખોરાક કયા છે?",
+            "word_count": 7,
+            "char_count": 39,
+            "token_count": 16,
+            "fertility": 2.286
+          },
+          {
+            "id": "q06",
+            "text": "ચા કેવી રીતે બનાવવી?",
+            "word_count": 4,
+            "char_count": 20,
+            "token_count": 7,
+            "fertility": 1.75
+          },
+          {
+            "id": "q07",
+            "text": "વરસાદના દિવસે સાથે શું લઈ જવું જોઈએ?",
+            "word_count": 7,
+            "char_count": 36,
+            "token_count": 12,
+            "fertility": 1.714
+          },
+          {
+            "id": "q08",
+            "text": "સૌર ઊર્જા શું છે?",
+            "word_count": 4,
+            "char_count": 17,
+            "token_count": 9,
+            "fertility": 2.25
+          },
+          {
+            "id": "q09",
+            "text": "હવામાન અને આબોહવા વચ્ચે શું તફાવત છે?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 17,
+            "fertility": 2.429
+          },
+          {
+            "id": "q10",
+            "text": "કાગળનું પુનઃચક્રણ શા માટે કરવું જોઈએ?",
+            "word_count": 6,
+            "char_count": 37,
+            "token_count": 17,
+            "fertility": 2.833
+          }
+        ],
+        "multiplier_vs_english": 1.712
+      },
+      "p50k (GPT-3)": {
+        "token_count": 803,
+        "fertility": 14.339,
+        "mean_tokens_per_sample": 80.3,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ભારતની રાજધાની કઈ છે?",
+            "word_count": 4,
+            "char_count": 21,
+            "token_count": 55,
+            "fertility": 13.75
+          },
+          {
+            "id": "q02",
+            "text": "પાણીનું રાસાયણિક સૂત્ર શું છે?",
+            "word_count": 5,
+            "char_count": 30,
+            "token_count": 80,
+            "fertility": 16.0
+          },
+          {
+            "id": "q03",
+            "text": "છોડને સૂર્યપ્રકાશની જરૂર શા માટે છે?",
+            "word_count": 6,
+            "char_count": 36,
+            "token_count": 96,
+            "fertility": 16.0
+          },
+          {
+            "id": "q04",
+            "text": "ઘરમાં પાણી કેવી રીતે બચાવી શકાય?",
+            "word_count": 6,
+            "char_count": 32,
+            "token_count": 84,
+            "fertility": 14.0
+          },
+          {
+            "id": "q05",
+            "text": "સ્વસ્થ નાસ્તા માટેના ત્રણ ખોરાક કયા છે?",
+            "word_count": 7,
+            "char_count": 39,
+            "token_count": 103,
+            "fertility": 14.714
+          },
+          {
+            "id": "q06",
+            "text": "ચા કેવી રીતે બનાવવી?",
+            "word_count": 4,
+            "char_count": 20,
+            "token_count": 52,
+            "fertility": 13.0
+          },
+          {
+            "id": "q07",
+            "text": "વરસાદના દિવસે સાથે શું લઈ જવું જોઈએ?",
+            "word_count": 7,
+            "char_count": 36,
+            "token_count": 94,
+            "fertility": 13.429
+          },
+          {
+            "id": "q08",
+            "text": "સૌર ઊર્જા શું છે?",
+            "word_count": 4,
+            "char_count": 17,
+            "token_count": 43,
+            "fertility": 10.75
+          },
+          {
+            "id": "q09",
+            "text": "હવામાન અને આબોહવા વચ્ચે શું તફાવત છે?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 97,
+            "fertility": 13.857
+          },
+          {
+            "id": "q10",
+            "text": "કાગળનું પુનઃચક્રણ શા માટે કરવું જોઈએ?",
+            "word_count": 6,
+            "char_count": 37,
+            "token_count": 99,
+            "fertility": 16.5
+          }
+        ],
+        "multiplier_vs_english": 11.0
+      }
+    }
+  },
+  "Punjabi": {
+    "sample_count": 10,
+    "word_count": 67,
+    "char_count": 316,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 508,
+        "fertility": 7.582,
+        "mean_tokens_per_sample": 50.8,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ਭਾਰਤ ਦੀ ਰਾਜਧਾਨੀ ਕੀ ਹੈ?",
+            "word_count": 5,
+            "char_count": 22,
+            "token_count": 35,
+            "fertility": 7.0
+          },
+          {
+            "id": "q02",
+            "text": "ਪਾਣੀ ਦਾ ਰਸਾਇਣਕ ਫ਼ਾਰਮੂਲਾ ਕੀ ਹੈ?",
+            "word_count": 6,
+            "char_count": 30,
+            "token_count": 49,
+            "fertility": 8.167
+          },
+          {
+            "id": "q03",
+            "text": "ਬੂਟਿਆਂ ਨੂੰ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਕਿਉਂ ਚਾਹੀਦੀ ਹੈ?",
+            "word_count": 8,
+            "char_count": 41,
+            "token_count": 67,
+            "fertility": 8.375
+          },
+          {
+            "id": "q04",
+            "text": "ਘਰ ਵਿੱਚ ਪਾਣੀ ਕਿਵੇਂ ਬਚਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+            "word_count": 8,
+            "char_count": 36,
+            "token_count": 57,
+            "fertility": 7.125
+          },
+          {
+            "id": "q05",
+            "text": "ਸਿਹਤਮੰਦ ਨਾਸ਼ਤੇ ਲਈ ਤਿੰਨ ਖਾਣੇ ਕਿਹੜੇ ਹਨ?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 61,
+            "fertility": 8.714
+          },
+          {
+            "id": "q06",
+            "text": "ਚਾਹ ਕਿਵੇਂ ਬਣਾਈ ਜਾਂਦੀ ਹੈ?",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 39,
+            "fertility": 7.8
+          },
+          {
+            "id": "q07",
+            "text": "ਮੀਂਹ ਵਾਲੇ ਦਿਨ ਨਾਲ ਕੀ ਲੈ ਕੇ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ?",
+            "word_count": 10,
+            "char_count": 42,
+            "token_count": 65,
+            "fertility": 6.5
+          },
+          {
+            "id": "q08",
+            "text": "ਸੂਰਜੀ ਊਰਜਾ ਕੀ ਹੈ?",
+            "word_count": 4,
+            "char_count": 17,
+            "token_count": 27,
+            "fertility": 6.75
+          },
+          {
+            "id": "q09",
+            "text": "ਮੌਸਮ ਅਤੇ ਜਲਵਾਯੂ ਵਿੱਚ ਕੀ ਫ਼ਰਕ ਹੈ?",
+            "word_count": 7,
+            "char_count": 32,
+            "token_count": 51,
+            "fertility": 7.286
+          },
+          {
+            "id": "q10",
+            "text": "ਕਾਗਜ਼ ਨੂੰ ਮੁੜ ਵਰਤਣਾ ਕਿਉਂ ਚਾਹੀਦਾ ਹੈ?",
+            "word_count": 7,
+            "char_count": 35,
+            "token_count": 57,
+            "fertility": 8.143
+          }
+        ],
+        "multiplier_vs_english": 6.959
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 174,
+        "fertility": 2.597,
+        "mean_tokens_per_sample": 17.4,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ਭਾਰਤ ਦੀ ਰਾਜਧਾਨੀ ਕੀ ਹੈ?",
+            "word_count": 5,
+            "char_count": 22,
+            "token_count": 12,
+            "fertility": 2.4
+          },
+          {
+            "id": "q02",
+            "text": "ਪਾਣੀ ਦਾ ਰਸਾਇਣਕ ਫ਼ਾਰਮੂਲਾ ਕੀ ਹੈ?",
+            "word_count": 6,
+            "char_count": 30,
+            "token_count": 18,
+            "fertility": 3.0
+          },
+          {
+            "id": "q03",
+            "text": "ਬੂਟਿਆਂ ਨੂੰ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਕਿਉਂ ਚਾਹੀਦੀ ਹੈ?",
+            "word_count": 8,
+            "char_count": 41,
+            "token_count": 23,
+            "fertility": 2.875
+          },
+          {
+            "id": "q04",
+            "text": "ਘਰ ਵਿੱਚ ਪਾਣੀ ਕਿਵੇਂ ਬਚਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+            "word_count": 8,
+            "char_count": 36,
+            "token_count": 18,
+            "fertility": 2.25
+          },
+          {
+            "id": "q05",
+            "text": "ਸਿਹਤਮੰਦ ਨਾਸ਼ਤੇ ਲਈ ਤਿੰਨ ਖਾਣੇ ਕਿਹੜੇ ਹਨ?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 22,
+            "fertility": 3.143
+          },
+          {
+            "id": "q06",
+            "text": "ਚਾਹ ਕਿਵੇਂ ਬਣਾਈ ਜਾਂਦੀ ਹੈ?",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 11,
+            "fertility": 2.2
+          },
+          {
+            "id": "q07",
+            "text": "ਮੀਂਹ ਵਾਲੇ ਦਿਨ ਨਾਲ ਕੀ ਲੈ ਕੇ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ?",
+            "word_count": 10,
+            "char_count": 42,
+            "token_count": 20,
+            "fertility": 2.0
+          },
+          {
+            "id": "q08",
+            "text": "ਸੂਰਜੀ ਊਰਜਾ ਕੀ ਹੈ?",
+            "word_count": 4,
+            "char_count": 17,
+            "token_count": 12,
+            "fertility": 3.0
+          },
+          {
+            "id": "q09",
+            "text": "ਮੌਸਮ ਅਤੇ ਜਲਵਾਯੂ ਵਿੱਚ ਕੀ ਫ਼ਰਕ ਹੈ?",
+            "word_count": 7,
+            "char_count": 32,
+            "token_count": 19,
+            "fertility": 2.714
+          },
+          {
+            "id": "q10",
+            "text": "ਕਾਗਜ਼ ਨੂੰ ਮੁੜ ਵਰਤਣਾ ਕਿਉਂ ਚਾਹੀਦਾ ਹੈ?",
+            "word_count": 7,
+            "char_count": 35,
+            "token_count": 19,
+            "fertility": 2.714
+          }
+        ],
+        "multiplier_vs_english": 2.384
+      },
+      "p50k (GPT-3)": {
+        "token_count": 508,
+        "fertility": 7.582,
+        "mean_tokens_per_sample": 50.8,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ਭਾਰਤ ਦੀ ਰਾਜਧਾਨੀ ਕੀ ਹੈ?",
+            "word_count": 5,
+            "char_count": 22,
+            "token_count": 35,
+            "fertility": 7.0
+          },
+          {
+            "id": "q02",
+            "text": "ਪਾਣੀ ਦਾ ਰਸਾਇਣਕ ਫ਼ਾਰਮੂਲਾ ਕੀ ਹੈ?",
+            "word_count": 6,
+            "char_count": 30,
+            "token_count": 49,
+            "fertility": 8.167
+          },
+          {
+            "id": "q03",
+            "text": "ਬੂਟਿਆਂ ਨੂੰ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਕਿਉਂ ਚਾਹੀਦੀ ਹੈ?",
+            "word_count": 8,
+            "char_count": 41,
+            "token_count": 67,
+            "fertility": 8.375
+          },
+          {
+            "id": "q04",
+            "text": "ਘਰ ਵਿੱਚ ਪਾਣੀ ਕਿਵੇਂ ਬਚਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+            "word_count": 8,
+            "char_count": 36,
+            "token_count": 57,
+            "fertility": 7.125
+          },
+          {
+            "id": "q05",
+            "text": "ਸਿਹਤਮੰਦ ਨਾਸ਼ਤੇ ਲਈ ਤਿੰਨ ਖਾਣੇ ਕਿਹੜੇ ਹਨ?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 61,
+            "fertility": 8.714
+          },
+          {
+            "id": "q06",
+            "text": "ਚਾਹ ਕਿਵੇਂ ਬਣਾਈ ਜਾਂਦੀ ਹੈ?",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 39,
+            "fertility": 7.8
+          },
+          {
+            "id": "q07",
+            "text": "ਮੀਂਹ ਵਾਲੇ ਦਿਨ ਨਾਲ ਕੀ ਲੈ ਕੇ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ?",
+            "word_count": 10,
+            "char_count": 42,
+            "token_count": 65,
+            "fertility": 6.5
+          },
+          {
+            "id": "q08",
+            "text": "ਸੂਰਜੀ ਊਰਜਾ ਕੀ ਹੈ?",
+            "word_count": 4,
+            "char_count": 17,
+            "token_count": 27,
+            "fertility": 6.75
+          },
+          {
+            "id": "q09",
+            "text": "ਮੌਸਮ ਅਤੇ ਜਲਵਾਯੂ ਵਿੱਚ ਕੀ ਫ਼ਰਕ ਹੈ?",
+            "word_count": 7,
+            "char_count": 32,
+            "token_count": 51,
+            "fertility": 7.286
+          },
+          {
+            "id": "q10",
+            "text": "ਕਾਗਜ਼ ਨੂੰ ਮੁੜ ਵਰਤਣਾ ਕਿਉਂ ਚਾਹੀਦਾ ਹੈ?",
+            "word_count": 7,
+            "char_count": 35,
+            "token_count": 57,
+            "fertility": 8.143
+          }
+        ],
+        "multiplier_vs_english": 6.959
+      }
+    }
+  },
+  "Marathi": {
+    "sample_count": 10,
+    "word_count": 48,
+    "char_count": 300,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 306,
+        "fertility": 6.375,
+        "mean_tokens_per_sample": 30.6,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "भारताची राजधानी कोणती आहे?",
+            "word_count": 4,
+            "char_count": 26,
+            "token_count": 28,
+            "fertility": 7.0
+          },
+          {
+            "id": "q02",
+            "text": "पाण्याचे रासायनिक सूत्र काय आहे?",
+            "word_count": 5,
+            "char_count": 32,
+            "token_count": 30,
+            "fertility": 6.0
+          },
+          {
+            "id": "q03",
+            "text": "वनस्पतींना सूर्यप्रकाशाची गरज का असते?",
+            "word_count": 5,
+            "char_count": 38,
+            "token_count": 38,
+            "fertility": 7.6
+          },
+          {
+            "id": "q04",
+            "text": "घरात पाण्याची बचत कशी करता येईल?",
+            "word_count": 6,
+            "char_count": 32,
+            "token_count": 32,
+            "fertility": 5.333
+          },
+          {
+            "id": "q05",
+            "text": "निरोगी नाश्त्यासाठी तीन पदार्थ कोणते?",
+            "word_count": 5,
+            "char_count": 37,
+            "token_count": 38,
+            "fertility": 7.6
+          },
+          {
+            "id": "q06",
+            "text": "चहा कसा बनवायचा?",
+            "word_count": 3,
+            "char_count": 16,
+            "token_count": 18,
+            "fertility": 6.0
+          },
+          {
+            "id": "q07",
+            "text": "पावसाच्या दिवशी सोबत काय न्यावे?",
+            "word_count": 5,
+            "char_count": 32,
+            "token_count": 32,
+            "fertility": 6.4
+          },
+          {
+            "id": "q08",
+            "text": "सौर ऊर्जा म्हणजे काय?",
+            "word_count": 4,
+            "char_count": 21,
+            "token_count": 22,
+            "fertility": 5.5
+          },
+          {
+            "id": "q09",
+            "text": "हवामान आणि जलवायू यांमध्ये काय फरक आहे?",
+            "word_count": 7,
+            "char_count": 39,
+            "token_count": 43,
+            "fertility": 6.143
+          },
+          {
+            "id": "q10",
+            "text": "कागदाचा पुनर्वापर का करावा?",
+            "word_count": 4,
+            "char_count": 27,
+            "token_count": 25,
+            "fertility": 6.25
+          }
+        ],
+        "multiplier_vs_english": 4.192
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 118,
+        "fertility": 2.458,
+        "mean_tokens_per_sample": 11.8,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "भारताची राजधानी कोणती आहे?",
+            "word_count": 4,
+            "char_count": 26,
+            "token_count": 7,
+            "fertility": 1.75
+          },
+          {
+            "id": "q02",
+            "text": "पाण्याचे रासायनिक सूत्र काय आहे?",
+            "word_count": 5,
+            "char_count": 32,
+            "token_count": 12,
+            "fertility": 2.4
+          },
+          {
+            "id": "q03",
+            "text": "वनस्पतींना सूर्यप्रकाशाची गरज का असते?",
+            "word_count": 5,
+            "char_count": 38,
+            "token_count": 15,
+            "fertility": 3.0
+          },
+          {
+            "id": "q04",
+            "text": "घरात पाण्याची बचत कशी करता येईल?",
+            "word_count": 6,
+            "char_count": 32,
+            "token_count": 14,
+            "fertility": 2.333
+          },
+          {
+            "id": "q05",
+            "text": "निरोगी नाश्त्यासाठी तीन पदार्थ कोणते?",
+            "word_count": 5,
+            "char_count": 37,
+            "token_count": 14,
+            "fertility": 2.8
+          },
+          {
+            "id": "q06",
+            "text": "चहा कसा बनवायचा?",
+            "word_count": 3,
+            "char_count": 16,
+            "token_count": 9,
+            "fertility": 3.0
+          },
+          {
+            "id": "q07",
+            "text": "पावसाच्या दिवशी सोबत काय न्यावे?",
+            "word_count": 5,
+            "char_count": 32,
+            "token_count": 12,
+            "fertility": 2.4
+          },
+          {
+            "id": "q08",
+            "text": "सौर ऊर्जा म्हणजे काय?",
+            "word_count": 4,
+            "char_count": 21,
+            "token_count": 6,
+            "fertility": 1.5
+          },
+          {
+            "id": "q09",
+            "text": "हवामान आणि जलवायू यांमध्ये काय फरक आहे?",
+            "word_count": 7,
+            "char_count": 39,
+            "token_count": 17,
+            "fertility": 2.429
+          },
+          {
+            "id": "q10",
+            "text": "कागदाचा पुनर्वापर का करावा?",
+            "word_count": 4,
+            "char_count": 27,
+            "token_count": 12,
+            "fertility": 3.0
+          }
+        ],
+        "multiplier_vs_english": 1.616
+      },
+      "p50k (GPT-3)": {
+        "token_count": 470,
+        "fertility": 9.792,
+        "mean_tokens_per_sample": 47.0,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "भारताची राजधानी कोणती आहे?",
+            "word_count": 4,
+            "char_count": 26,
+            "token_count": 41,
+            "fertility": 10.25
+          },
+          {
+            "id": "q02",
+            "text": "पाण्याचे रासायनिक सूत्र काय आहे?",
+            "word_count": 5,
+            "char_count": 32,
+            "token_count": 50,
+            "fertility": 10.0
+          },
+          {
+            "id": "q03",
+            "text": "वनस्पतींना सूर्यप्रकाशाची गरज का असते?",
+            "word_count": 5,
+            "char_count": 38,
+            "token_count": 63,
+            "fertility": 12.6
+          },
+          {
+            "id": "q04",
+            "text": "घरात पाण्याची बचत कशी करता येईल?",
+            "word_count": 6,
+            "char_count": 32,
+            "token_count": 49,
+            "fertility": 8.167
+          },
+          {
+            "id": "q05",
+            "text": "निरोगी नाश्त्यासाठी तीन पदार्थ कोणते?",
+            "word_count": 5,
+            "char_count": 37,
+            "token_count": 61,
+            "fertility": 12.2
+          },
+          {
+            "id": "q06",
+            "text": "चहा कसा बनवायचा?",
+            "word_count": 3,
+            "char_count": 16,
+            "token_count": 23,
+            "fertility": 7.667
+          },
+          {
+            "id": "q07",
+            "text": "पावसाच्या दिवशी सोबत काय न्यावे?",
+            "word_count": 5,
+            "char_count": 32,
+            "token_count": 50,
+            "fertility": 10.0
+          },
+          {
+            "id": "q08",
+            "text": "सौर ऊर्जा म्हणजे काय?",
+            "word_count": 4,
+            "char_count": 21,
+            "token_count": 33,
+            "fertility": 8.25
+          },
+          {
+            "id": "q09",
+            "text": "हवामान आणि जलवायू यांमध्ये काय फरक आहे?",
+            "word_count": 7,
+            "char_count": 39,
+            "token_count": 60,
+            "fertility": 8.571
+          },
+          {
+            "id": "q10",
+            "text": "कागदाचा पुनर्वापर का करावा?",
+            "word_count": 4,
+            "char_count": 27,
+            "token_count": 40,
+            "fertility": 10.0
+          }
+        ],
+        "multiplier_vs_english": 6.438
+      }
+    }
+  },
+  "Odia": {
+    "sample_count": 10,
+    "word_count": 52,
+    "char_count": 291,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 719,
+        "fertility": 13.827,
+        "mean_tokens_per_sample": 71.9,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ଭାରତର ରାଜଧାନୀ କେଉଁଟି?",
+            "word_count": 3,
+            "char_count": 21,
+            "token_count": 54,
+            "fertility": 18.0
+          },
+          {
+            "id": "q02",
+            "text": "ଜଳର ରାସାୟନିକ ସୂତ୍ର କ'ଣ?",
+            "word_count": 5,
+            "char_count": 23,
+            "token_count": 54,
+            "fertility": 10.8
+          },
+          {
+            "id": "q03",
+            "text": "ଗଛଲତା ପାଇଁ ସୂର୍ଯ୍ୟାଲୋକ କାହିଁକି ଦରକାର?",
+            "word_count": 5,
+            "char_count": 37,
+            "token_count": 94,
+            "fertility": 18.8
+          },
+          {
+            "id": "q04",
+            "text": "ଘରେ ଜଳ କିପରି ସଞ୍ଚୟ କରିହେବ?",
+            "word_count": 5,
+            "char_count": 26,
+            "token_count": 63,
+            "fertility": 12.6
+          },
+          {
+            "id": "q05",
+            "text": "ସ୍ୱାସ୍ଥ୍ୟକର ଜଳଖିଆ ପାଇଁ ତିନୋଟି ଖାଦ୍ୟ କ'ଣ?",
+            "word_count": 7,
+            "char_count": 40,
+            "token_count": 98,
+            "fertility": 14.0
+          },
+          {
+            "id": "q06",
+            "text": "ଚା କିପରି ତିଆରି କରାଯାଏ?",
+            "word_count": 4,
+            "char_count": 22,
+            "token_count": 55,
+            "fertility": 13.75
+          },
+          {
+            "id": "q07",
+            "text": "ବର୍ଷା ଦିନରେ ସାଙ୍ଗରେ କ'ଣ ନେବା ଉଚିତ?",
+            "word_count": 7,
+            "char_count": 34,
+            "token_count": 82,
+            "fertility": 11.714
+          },
+          {
+            "id": "q08",
+            "text": "ସୌର ଶକ୍ତି କ'ଣ?",
+            "word_count": 4,
+            "char_count": 14,
+            "token_count": 31,
+            "fertility": 7.75
+          },
+          {
+            "id": "q09",
+            "text": "ପାଣିପାଗ ଓ ଜଳବାୟୁ ମଧ୍ୟରେ ପାର୍ଥକ୍ୟ କ'ଣ?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 92,
+            "fertility": 13.143
+          },
+          {
+            "id": "q10",
+            "text": "କାଗଜର ପୁନଃବ୍ୟବହାର କାହିଁକି କରିବା ଉଚିତ?",
+            "word_count": 5,
+            "char_count": 37,
+            "token_count": 96,
+            "fertility": 19.2
+          }
+        ],
+        "multiplier_vs_english": 9.849
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 287,
+        "fertility": 5.519,
+        "mean_tokens_per_sample": 28.7,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ଭାରତର ରାଜଧାନୀ କେଉଁଟି?",
+            "word_count": 3,
+            "char_count": 21,
+            "token_count": 22,
+            "fertility": 7.333
+          },
+          {
+            "id": "q02",
+            "text": "ଜଳର ରାସାୟନିକ ସୂତ୍ର କ'ଣ?",
+            "word_count": 5,
+            "char_count": 23,
+            "token_count": 22,
+            "fertility": 4.4
+          },
+          {
+            "id": "q03",
+            "text": "ଗଛଲତା ପାଇଁ ସୂର୍ଯ୍ୟାଲୋକ କାହିଁକି ଦରକାର?",
+            "word_count": 5,
+            "char_count": 37,
+            "token_count": 38,
+            "fertility": 7.6
+          },
+          {
+            "id": "q04",
+            "text": "ଘରେ ଜଳ କିପରି ସଞ୍ଚୟ କରିହେବ?",
+            "word_count": 5,
+            "char_count": 26,
+            "token_count": 25,
+            "fertility": 5.0
+          },
+          {
+            "id": "q05",
+            "text": "ସ୍ୱାସ୍ଥ୍ୟକର ଜଳଖିଆ ପାଇଁ ତିନୋଟି ଖାଦ୍ୟ କ'ଣ?",
+            "word_count": 7,
+            "char_count": 40,
+            "token_count": 41,
+            "fertility": 5.857
+          },
+          {
+            "id": "q06",
+            "text": "ଚା କିପରି ତିଆରି କରାଯାଏ?",
+            "word_count": 4,
+            "char_count": 22,
+            "token_count": 22,
+            "fertility": 5.5
+          },
+          {
+            "id": "q07",
+            "text": "ବର୍ଷା ଦିନରେ ସାଙ୍ଗରେ କ'ଣ ନେବା ଉଚିତ?",
+            "word_count": 7,
+            "char_count": 34,
+            "token_count": 32,
+            "fertility": 4.571
+          },
+          {
+            "id": "q08",
+            "text": "ସୌର ଶକ୍ତି କ'ଣ?",
+            "word_count": 4,
+            "char_count": 14,
+            "token_count": 14,
+            "fertility": 3.5
+          },
+          {
+            "id": "q09",
+            "text": "ପାଣିପାଗ ଓ ଜଳବାୟୁ ମଧ୍ୟରେ ପାର୍ଥକ୍ୟ କ'ଣ?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 35,
+            "fertility": 5.0
+          },
+          {
+            "id": "q10",
+            "text": "କାଗଜର ପୁନଃବ୍ୟବହାର କାହିଁକି କରିବା ଉଚିତ?",
+            "word_count": 5,
+            "char_count": 37,
+            "token_count": 36,
+            "fertility": 7.2
+          }
+        ],
+        "multiplier_vs_english": 3.932
+      },
+      "p50k (GPT-3)": {
+        "token_count": 769,
+        "fertility": 14.788,
+        "mean_tokens_per_sample": 76.9,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "ଭାରତର ରାଜଧାନୀ କେଉଁଟି?",
+            "word_count": 3,
+            "char_count": 21,
+            "token_count": 57,
+            "fertility": 19.0
+          },
+          {
+            "id": "q02",
+            "text": "ଜଳର ରାସାୟନିକ ସୂତ୍ର କ'ଣ?",
+            "word_count": 5,
+            "char_count": 23,
+            "token_count": 59,
+            "fertility": 11.8
+          },
+          {
+            "id": "q03",
+            "text": "ଗଛଲତା ପାଇଁ ସୂର୍ଯ୍ୟାଲୋକ କାହିଁକି ଦରକାର?",
+            "word_count": 5,
+            "char_count": 37,
+            "token_count": 101,
+            "fertility": 20.2
+          },
+          {
+            "id": "q04",
+            "text": "ଘରେ ଜଳ କିପରି ସଞ୍ଚୟ କରିହେବ?",
+            "word_count": 5,
+            "char_count": 26,
+            "token_count": 68,
+            "fertility": 13.6
+          },
+          {
+            "id": "q05",
+            "text": "ସ୍ୱାସ୍ଥ୍ୟକର ଜଳଖିଆ ପାଇଁ ତିନୋଟି ଖାଦ୍ୟ କ'ଣ?",
+            "word_count": 7,
+            "char_count": 40,
+            "token_count": 106,
+            "fertility": 15.143
+          },
+          {
+            "id": "q06",
+            "text": "ଚା କିପରି ତିଆରି କରାଯାଏ?",
+            "word_count": 4,
+            "char_count": 22,
+            "token_count": 58,
+            "fertility": 14.5
+          },
+          {
+            "id": "q07",
+            "text": "ବର୍ଷା ଦିନରେ ସାଙ୍ଗରେ କ'ଣ ନେବା ଉଚିତ?",
+            "word_count": 7,
+            "char_count": 34,
+            "token_count": 88,
+            "fertility": 12.571
+          },
+          {
+            "id": "q08",
+            "text": "ସୌର ଶକ୍ତି କ'ଣ?",
+            "word_count": 4,
+            "char_count": 14,
+            "token_count": 34,
+            "fertility": 8.5
+          },
+          {
+            "id": "q09",
+            "text": "ପାଣିପାଗ ଓ ଜଳବାୟୁ ମଧ୍ୟରେ ପାର୍ଥକ୍ୟ କ'ଣ?",
+            "word_count": 7,
+            "char_count": 37,
+            "token_count": 97,
+            "fertility": 13.857
+          },
+          {
+            "id": "q10",
+            "text": "କାଗଜର ପୁନଃବ୍ୟବହାର କାହିଁକି କରିବା ଉଚିତ?",
+            "word_count": 5,
+            "char_count": 37,
+            "token_count": 101,
+            "fertility": 20.2
+          }
+        ],
+        "multiplier_vs_english": 10.534
+      }
+    }
+  },
+  "Urdu": {
+    "sample_count": 10,
+    "word_count": 70,
+    "char_count": 323,
+    "word_count_method": "Unicode letter/number runs; combining marks stay with the preceding run. This is not language-specific morphological segmentation.",
+    "tokenizers": {
+      "cl100k (GPT-4)": {
+        "token_count": 306,
+        "fertility": 4.371,
+        "mean_tokens_per_sample": 30.6,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "بھارت کا دارالحکومت کیا ہے؟",
+            "word_count": 5,
+            "char_count": 27,
+            "token_count": 25,
+            "fertility": 5.0
+          },
+          {
+            "id": "q02",
+            "text": "پانی کا کیمیائی فارمولا کیا ہے؟",
+            "word_count": 6,
+            "char_count": 31,
+            "token_count": 27,
+            "fertility": 4.5
+          },
+          {
+            "id": "q03",
+            "text": "پودوں کو سورج کی روشنی کیوں درکار ہوتی ہے؟",
+            "word_count": 9,
+            "char_count": 42,
+            "token_count": 38,
+            "fertility": 4.222
+          },
+          {
+            "id": "q04",
+            "text": "گھر میں پانی کیسے بچایا جا سکتا ہے؟",
+            "word_count": 8,
+            "char_count": 35,
+            "token_count": 34,
+            "fertility": 4.25
+          },
+          {
+            "id": "q05",
+            "text": "صحت مند ناشتے کے تین کھانے کون سے ہیں؟",
+            "word_count": 9,
+            "char_count": 38,
+            "token_count": 36,
+            "fertility": 4.0
+          },
+          {
+            "id": "q06",
+            "text": "چائے کیسے بنائی جاتی ہے؟",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 26,
+            "fertility": 5.2
+          },
+          {
+            "id": "q07",
+            "text": "بارش کے دن ساتھ کیا لے جانا چاہیے؟",
+            "word_count": 8,
+            "char_count": 34,
+            "token_count": 32,
+            "fertility": 4.0
+          },
+          {
+            "id": "q08",
+            "text": "شمسی توانائی کیا ہے؟",
+            "word_count": 4,
+            "char_count": 20,
+            "token_count": 20,
+            "fertility": 5.0
+          },
+          {
+            "id": "q09",
+            "text": "موسم اور آب و ہوا میں کیا فرق ہے؟",
+            "word_count": 9,
+            "char_count": 33,
+            "token_count": 32,
+            "fertility": 3.556
+          },
+          {
+            "id": "q10",
+            "text": "کاغذ کو دوبارہ استعمال کیوں کرنا چاہیے؟",
+            "word_count": 7,
+            "char_count": 39,
+            "token_count": 36,
+            "fertility": 5.143
+          }
+        ],
+        "multiplier_vs_english": 4.192
+      },
+      "o200k (GPT-4o)": {
+        "token_count": 109,
+        "fertility": 1.557,
+        "mean_tokens_per_sample": 10.9,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "بھارت کا دارالحکومت کیا ہے؟",
+            "word_count": 5,
+            "char_count": 27,
+            "token_count": 10,
+            "fertility": 2.0
+          },
+          {
+            "id": "q02",
+            "text": "پانی کا کیمیائی فارمولا کیا ہے؟",
+            "word_count": 6,
+            "char_count": 31,
+            "token_count": 11,
+            "fertility": 1.833
+          },
+          {
+            "id": "q03",
+            "text": "پودوں کو سورج کی روشنی کیوں درکار ہوتی ہے؟",
+            "word_count": 9,
+            "char_count": 42,
+            "token_count": 15,
+            "fertility": 1.667
+          },
+          {
+            "id": "q04",
+            "text": "گھر میں پانی کیسے بچایا جا سکتا ہے؟",
+            "word_count": 8,
+            "char_count": 35,
+            "token_count": 11,
+            "fertility": 1.375
+          },
+          {
+            "id": "q05",
+            "text": "صحت مند ناشتے کے تین کھانے کون سے ہیں؟",
+            "word_count": 9,
+            "char_count": 38,
+            "token_count": 13,
+            "fertility": 1.444
+          },
+          {
+            "id": "q06",
+            "text": "چائے کیسے بنائی جاتی ہے؟",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 8,
+            "fertility": 1.6
+          },
+          {
+            "id": "q07",
+            "text": "بارش کے دن ساتھ کیا لے جانا چاہیے؟",
+            "word_count": 8,
+            "char_count": 34,
+            "token_count": 11,
+            "fertility": 1.375
+          },
+          {
+            "id": "q08",
+            "text": "شمسی توانائی کیا ہے؟",
+            "word_count": 4,
+            "char_count": 20,
+            "token_count": 7,
+            "fertility": 1.75
+          },
+          {
+            "id": "q09",
+            "text": "موسم اور آب و ہوا میں کیا فرق ہے؟",
+            "word_count": 9,
+            "char_count": 33,
+            "token_count": 12,
+            "fertility": 1.333
+          },
+          {
+            "id": "q10",
+            "text": "کاغذ کو دوبارہ استعمال کیوں کرنا چاہیے؟",
+            "word_count": 7,
+            "char_count": 39,
+            "token_count": 11,
+            "fertility": 1.571
+          }
+        ],
+        "multiplier_vs_english": 1.493
+      },
+      "p50k (GPT-3)": {
+        "token_count": 436,
+        "fertility": 6.229,
+        "mean_tokens_per_sample": 43.6,
+        "samples": [
+          {
+            "id": "q01",
+            "text": "بھارت کا دارالحکومت کیا ہے؟",
+            "word_count": 5,
+            "char_count": 27,
+            "token_count": 35,
+            "fertility": 7.0
+          },
+          {
+            "id": "q02",
+            "text": "پانی کا کیمیائی فارمولا کیا ہے؟",
+            "word_count": 6,
+            "char_count": 31,
+            "token_count": 43,
+            "fertility": 7.167
+          },
+          {
+            "id": "q03",
+            "text": "پودوں کو سورج کی روشنی کیوں درکار ہوتی ہے؟",
+            "word_count": 9,
+            "char_count": 42,
+            "token_count": 59,
+            "fertility": 6.556
+          },
+          {
+            "id": "q04",
+            "text": "گھر میں پانی کیسے بچایا جا سکتا ہے؟",
+            "word_count": 8,
+            "char_count": 35,
+            "token_count": 48,
+            "fertility": 6.0
+          },
+          {
+            "id": "q05",
+            "text": "صحت مند ناشتے کے تین کھانے کون سے ہیں؟",
+            "word_count": 9,
+            "char_count": 38,
+            "token_count": 52,
+            "fertility": 5.778
+          },
+          {
+            "id": "q06",
+            "text": "چائے کیسے بنائی جاتی ہے؟",
+            "word_count": 5,
+            "char_count": 24,
+            "token_count": 34,
+            "fertility": 6.8
+          },
+          {
+            "id": "q07",
+            "text": "بارش کے دن ساتھ کیا لے جانا چاہیے؟",
+            "word_count": 8,
+            "char_count": 34,
+            "token_count": 46,
+            "fertility": 5.75
+          },
+          {
+            "id": "q08",
+            "text": "شمسی توانائی کیا ہے؟",
+            "word_count": 4,
+            "char_count": 20,
+            "token_count": 28,
+            "fertility": 7.0
+          },
+          {
+            "id": "q09",
+            "text": "موسم اور آب و ہوا میں کیا فرق ہے؟",
+            "word_count": 9,
+            "char_count": 33,
+            "token_count": 40,
+            "fertility": 4.444
+          },
+          {
+            "id": "q10",
+            "text": "کاغذ کو دوبارہ استعمال کیوں کرنا چاہیے؟",
+            "word_count": 7,
+            "char_count": 39,
+            "token_count": 51,
+            "fertility": 7.286
+          }
+        ],
+        "multiplier_vs_english": 5.973
+      }
+    }
+  }
+}
