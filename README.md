@@ -1,198 +1,138 @@
-# Falcon: The Token Tax
+# Token Tax
 
-Falcon is an interactive tokenizer and text-conversion research application for
-measuring how scripts and language representations affect token usage.
+Token Tax is a local research application for examining how tokenizer encodings,
+Indic-script transliteration, and native-language text formatting affect measured
+token counts.
 
-The main application is a Streamlit web app that lets you:
-
-- Count the same text with multiple local or benchmark tokenizers.
-- Compare native Indic text, ISO Romanized text, and an English translation.
-- Explore measured FLORES-200 token counts by language and tokenizer.
-- View a reference cost estimate for tokenizers mapped to published model prices.
-- Inspect measured strategy-quality data when an evaluation result file exists.
-
-The project currently supports English, Kannada, Hindi, and Tamil in its data
-pipeline. The live conversion studio supports Kannada, Hindi, and Tamil as
-source languages.
+The application includes a Flask dashboard, command-line experiments, and a
+native-language sentence optimizer. It runs locally and does not send dashboard
+text to an AI provider.
 
 ## Main application
 
-Start the tokenizer app from the repository root:
+Start the Token Tax dashboard from the repository root:
 
-```bash
-python -m pip install -r requirements.txt
-python -m streamlit run audit/app.py
+```powershell
+python -m pip install -r token_tax/requirements.txt
+python token_tax/run_all.py dashboard
 ```
 
-Then open the local URL printed by Streamlit, normally
-<http://localhost:8501>.
+Open <http://127.0.0.1:5000/> in a browser.
 
-### Application tabs
+Keep the terminal open while using the dashboard. Press `Ctrl+C` to stop the
+server.
 
-#### Overview
+The dashboard provides:
 
-Displays the measured project summary, including the 1,012 aligned FLORES-200
-sentences in each of the four audited languages. It also shows average token
-counts and the relative token burden compared with English.
+- A live token inspector for custom text.
+- A fertility benchmark for Indian languages and English.
+- An Indic-script to ITRANS transliteration comparison.
+- A separately trained SentencePiece BPE tokenizer.
+- A native-language sentence optimizer.
 
-#### Convert text
+## Dashboard features
 
-This is the live conversion and tokenizer studio.
+### Live inspector
 
-1. Choose Kannada, Hindi, or Tamil.
-2. Enter or edit text in the source-language box.
-3. Select one of three conversion modes:
-   - **Native:** keeps the original text unchanged.
-   - **Romanized:** converts the Indic script to Latin characters with ISO
-     transliteration while preserving the source wording.
-   - **English pivot:** translates the meaning into English with
-     `facebook/nllb-200-distilled-600M`.
-4. The app counts the native and converted representations with the locally
-   available tokenizers and charts the result.
+Enter text in the live inspector to measure:
 
-Romanization runs locally and updates immediately. English pivot translation
-runs in a background worker and can take time on CPU. The first pivot run
-downloads the NLLB model weights, which require additional disk space and
-network access.
+- `cl100k_base` token count.
+- `o200k_base` token count.
+- `p50k_base` token count.
+- Approximate Unicode word-unit count.
+- Detected Unicode script.
+- Individual token pieces and byte fragments.
+- Indic-script transliteration to ITRANS when supported.
 
-#### Token data
+Script detection reports the Unicode script, not the language. For example,
+Devanagari text could be Hindi or Marathi.
 
-Compares measured average token counts for English and one selected Indic
-language. It also calculates the Indic/English token ratio for every tokenizer
-in the audit dataset.
+### Fertility benchmark
 
-#### Quality results
+The benchmark uses a curated set of 10 aligned English and Indian-language
+prompts. It reports:
 
-Displays accuracy-versus-token-cost results only when
-`data/eval/results.csv` is present and valid. Until real evaluation results are
-supplied, the app explicitly reports that measured quality data is unavailable.
+- Approximate Unicode word count.
+- Character count.
+- Tokens per tokenizer.
+- Tokens per word, or fertility.
+- Measured multiplier compared with English.
 
-## Tokenizers
+Supported encodings are:
 
-The audit uses these tokenizer implementations:
+| Name | Encoding |
+|---|---|
+| GPT-4 benchmark | `cl100k_base` |
+| GPT-4o benchmark | `o200k_base` |
+| GPT-3 benchmark | `p50k_base` |
 
-| Name | Implementation | Data type |
-|---|---|---|
-| `cl100k` | OpenAI `cl100k_base` | Reference encoding |
-| `o200k` | OpenAI `o200k_base` | Reference encoding |
-| `qwen` | `Qwen/Qwen2.5-7B-Instruct` | Local Hugging Face tokenizer |
-| `sarvam` | `sarvamai/sarvam-1` | Local Hugging Face tokenizer |
+These are local tokenizer measurements, not provider cost or API usage estimates.
 
-The Qwen and Sarvam model revisions are pinned in `audit/count_tokens.py`.
-Hugging Face loads tokenizer metadata rather than downloading model weights for
-the four-tokenizer audit.
+### Transliteration pipeline
 
-## Convert text strategies
+The transliteration feature converts supported Indic text to ITRANS and compares
+token counts using `cl100k_base`.
 
-### Native
+It does not translate meaning. Urdu is unsupported by the installed script
+mapping. Round-trip character similarity and exact round trips are diagnostics;
+they do not prove semantic equivalence.
 
-Returns the source text unchanged. This is the baseline representation.
+### SentencePiece
 
-### Romanized
+The dashboard trains a separate SentencePiece BPE tokenizer from 8 questions per
+language in the source corpus. The remaining 2 questions per language are used
+as held-out samples.
 
-Uses `indic-transliteration` to change the writing system to Latin script.
-Romanization preserves the source wording; it is not translation.
+The separate tokenizer reports:
 
-Example behavior:
+- Vocabulary size.
+- Piece count.
+- `cl100k_base` token count for comparison.
+- Exact round-trip reconstruction.
+- Percentage count change.
 
-```text
-Kannada: ನಮಸ್ಕಾರ
-ISO:       namaskaara
-```
+SentencePiece pieces are not GPT or Gemini tokens. This tokenizer is not merged
+into a model vocabulary and does not establish answer quality or production
+token savings.
 
-### English pivot
+### Native-language sentence optimizer
 
-Uses Meta's NLLB-200 distilled 600M model to translate the source text into
-English. NLLB requires substantially more setup and runtime resources than
-Romanization.
+The optimizer provides conservative Unicode and whitespace cleanup for
+Kannada, Tamil, Telugu, Malayalam, Hindi, Marathi, Bengali, Gujarati, Punjabi,
+Odia, Urdu, and English.
 
-CPU-only usage is supported, but the first model download and inference can be
-slow. A CUDA-compatible GPU is used automatically when PyTorch detects one.
+Supported selected encodings are:
 
-## Measured token audit
+- `cl100k_base`
+- `o200k_base`
+- `p50k_base`
 
-The data audit is based on the official Meta FLORES-200 `devtest` split:
+The optimizer:
 
-- English: `eng_Latn`
-- Kannada: `kan_Knda`
-- Hindi: `hin_Deva`
-- Tamil: `tam_Taml`
+- Applies NFC normalization.
+- Cleans selected whitespace and formatting issues.
+- Preserves orthographic ZWJ and ZWNJ characters.
+- Finds adjacent repeated-word candidates.
+- Keeps repeated words unless the user confirms removal.
+- Rejects a result when the selected encoding increases its token count.
 
-The audit expects 1,012 aligned, non-empty lines per language. It verifies the
-line counts and alignment before counting tokens.
-
-### Download the FLORES archive
-
-The detailed audit instructions and provenance are in
-[audit/README.md](audit/README.md). The FLORES dataset is not committed to this
-repository.
-
-Place the downloaded files under:
-
-```text
-audit/flores200_dataset/devtest/
-├── eng_Latn.devtest
-├── kan_Knda.devtest
-├── hin_Deva.devtest
-└── tam_Taml.devtest
-```
-
-### Generate token counts
-
-The normal online run:
-
-```bash
-python -m audit.count_tokens
-```
-
-To require cached Hugging Face tokenizer assets and disable network downloads:
-
-```bash
-python -m audit.count_tokens --offline
-```
-
-The audit writes:
-
-```text
-data/audit/token_counts.csv
-```
-
-The CSV contract is:
-
-```text
-id,lang,tokenizer,tokens,cost_inr
-```
-
-The `id` field is the zero-based FLORES sentence position. Output ordering is
-deterministic, and unpriced local tokenizers have an empty `cost_inr` field.
-
-## Cost estimates
-
-Cost information in `audit/pricing.json` is a reference estimate, not a statement
-of actual billed usage.
-
-- `cl100k` maps to GPT-4 Turbo for a historical benchmark. That model is shut
-  down and may not be callable.
-- `o200k` maps to GPT-4o's published standard input price.
-- Qwen and Sarvam are local tokenizers and have no API price in this audit.
-- The USD-to-INR rate is stored as a dated snapshot and is not a live quote.
-
-When deploying or billing against a real provider, replace the benchmark entry
-with the actual model and provider pricing.
+Whitespace changes and token-count reductions do not prove that meaning is
+preserved. Review proposed changes before using them.
 
 ## Installation
 
 ### Windows
 
+Open PowerShell in the repository root:
+
 ```powershell
 python -m venv .venv
-.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python -m streamlit run audit/app.py
+python -m pip install -r token_tax/requirements.txt
 ```
 
-If PowerShell blocks activation, use Command Prompt instead:
+If PowerShell does not allow activation, use Command Prompt:
 
 ```bat
 .venv\Scripts\activate.bat
@@ -204,141 +144,221 @@ If PowerShell blocks activation, use Command Prompt instead:
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python -m streamlit run audit/app.py
+python -m pip install -r token_tax/requirements.txt
 ```
 
-### Python requirement
+Python 3.10 or later is recommended.
 
-Use a supported Python 3 environment. The project dependencies include PyTorch
-only for the optional NLLB pivot translation workflow; the main tokenizer count
-and Romanization interfaces do not require model inference.
+## Run the dashboard
 
-For a CPU-only PyTorch installation, install the appropriate wheel for your
-platform first, then install the optional pivot dependencies:
+Activate the virtual environment, then run:
 
-```bash
-python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -r transform/requirements.txt
+```powershell
+python token_tax/run_all.py dashboard
 ```
 
-For GPU systems, install the PyTorch build matching your CUDA environment before
-installing `transform/requirements.txt`.
+On the first dashboard load, the application loads the benchmark,
+transliteration, and SentencePiece data. SentencePiece training may take a short
+time.
 
-## Optional demo command
+Open <http://127.0.0.1:5000/>.
 
-On Unix-like systems, `run_round1_demo.sh` runs the offline audit and starts the
-Streamlit app using `.venv`:
+The dashboard requires internet access for its CDN-hosted Chart.js library.
+Tokenizer inspection and local experiments run on the machine.
 
-```bash
-./run_round1_demo.sh
+## Command-line experiments
+
+Run an individual experiment:
+
+```powershell
+python token_tax/run_all.py bench
+python token_tax/run_all.py pipeline
+python token_tax/run_all.py vocab
+python token_tax/run_all.py native-noise
 ```
 
-The script assumes a virtual environment named `.venv` and uses its Python
-interpreter.
+Run the standard benchmark, transliteration, and vocabulary experiments:
+
+```powershell
+python token_tax/run_all.py all
+```
+
+The `native-noise` experiment is separate and is not included in `all`.
+
+List commands:
+
+```powershell
+python token_tax/run_all.py --help
+```
+
+## HTTP API
+
+The Flask dashboard exposes these routes:
+
+| Method and route | Purpose |
+|---|---|
+| `GET /api/data` | Return benchmark, transliteration, and vocabulary data |
+| `POST /api/inspect` | Measure tokenization, word units, script, and transliteration |
+| `POST /api/vocab/inspect` | Evaluate custom text with the trained SentencePiece tokenizer |
+| `POST /api/native-optimize` | Clean text and report measured token changes |
+
+Example native-optimizer request:
+
+```powershell
+$body = @{
+    text = "  ಕನ್ನಡ   ವಾಕ್ಯ  "
+    language = "kn"
+    encoding = "cl100k_base"
+} | ConvertTo-Json
+
+Invoke-RestMethod `
+  -Uri "http://127.0.0.1:5000/api/native-optimize" `
+  -Method Post `
+  -ContentType "application/json" `
+  -Body $body
+```
+
+Supported optimizer language codes:
+
+```text
+kn  Kannada
+ta  Tamil
+te  Telugu
+ml  Malayalam
+hi  Hindi
+mr  Marathi
+bn  Bengali
+gu  Gujarati
+pa  Punjabi
+or  Odia
+ur  Urdu
+en  English
+```
+
+The optimizer limit is 10,000 characters. Custom SentencePiece and general
+inspection endpoints have separate input limits.
+
+If repeated-word candidates are returned, review them before confirming removal.
+Send the original input again and include the reviewed candidate IDs in
+`confirmed_duplicate_ids`.
 
 ## Project structure
 
 ```text
-audit/
-  app.py                  # Main Streamlit tokenizer application
-  count_tokens.py         # FLORES audit and CSV generation
-  pricing.json            # Dated reference pricing and exchange-rate snapshot
-  README.md               # Dataset and audit provenance
-
-transform/
-  romanize.py             # Native text to ISO Romanization
-  pivot.py                # NLLB English pivot translation
-  requirements.txt        # Optional translation dependencies
-
-router/
-  features.py             # Router feature extraction
-  server.py               # FastAPI OpenAI-compatible proxy
-  train_eval.py           # Router training and evaluation
-  transforms.py           # Native, Romanized, and pivot strategies
-
-tests/
-  test_audit.py           # Audit loader, count, price, and CSV tests
-  test_conversion.py      # Romanization tests
-  test_server.py          # Proxy and server tests
-  test_router_features.py # Router feature tests
-
-data/
-  audit/                  # Generated token counts
-  eval/                   # Optional measured evaluation results
+token_tax/
+  run_all.py                       # Command-line entry point
+  1_fertility_benchmarker.py       # Token fertility benchmark
+  2_transliteration_pipeline.py    # Indic transliteration and round-trip checks
+  3_vocab_expansion_demo.py        # Separate SentencePiece tokenizer experiment
+  4_dashboard.py                   # Flask dashboard and JSON API
+  native_language_optimizer.py     # Native text cleanup and token measurement
+  native_noise_experiment.py       # Synthetic native-noise experiment
+  indian_language_questions.json   # Shared source corpus
+  benchmark_results.json           # Saved benchmark measurements
+  pipeline_results.json            # Saved transliteration measurements
+  vocab_expansion_results.json     # Saved SentencePiece measurements
+  native_noise_dataset.json        # Generated clean and noisy variants
+  native_noise_results.json        # Saved native-noise measurements
+  requirements.txt                 # Python dependencies
+  README.md                        # Detailed Token Tax documentation
+  tests/                           # Unit and dashboard/API tests
 ```
 
-## Testing
+## Source corpus
 
-Run the test suite:
+The source corpus is
+[token_tax/indian_language_questions.json](token_tax/indian_language_questions.json).
 
-```bash
-python -m pytest
+It contains 10 curated prompts per language across:
+
+- English
+- Hindi
+- Tamil
+- Kannada
+- Telugu
+- Bengali
+- Malayalam
+- Gujarati
+- Punjabi
+- Odia
+- Urdu
+- Marathi
+
+The corpus is a curated draft dataset, not a naturally sampled or
+native-speaker-reviewed corpus.
+
+## Generated result files
+
+Running the standard experiments creates or updates:
+
+- [token_tax/benchmark_results.json](token_tax/benchmark_results.json)
+- [token_tax/pipeline_results.json](token_tax/pipeline_results.json)
+- [token_tax/vocab_expansion_results.json](token_tax/vocab_expansion_results.json)
+
+Running the native-noise experiment creates or updates:
+
+- [token_tax/native_noise_dataset.json](token_tax/native_noise_dataset.json)
+- [token_tax/native_noise_results.json](token_tax/native_noise_results.json)
+
+The dashboard calculates current local measurements when it loads. It does not
+depend on all saved JSON result files.
+
+## Tests
+
+Run all Token Tax tests from the repository root:
+
+```powershell
+python -m unittest discover -s token_tax/tests
 ```
 
-To run only focused audit tests:
+The tests cover tokenizer experiments, optimizer safety and measurements,
+native-noise generation, and dashboard API behavior.
 
-```bash
-python -m pytest tests/test_audit.py tests/test_conversion.py
+## Dependencies
+
+The Token Tax dependencies are:
+
+```text
+tiktoken
+sentencepiece
+indic-transliteration
+flask
 ```
 
-## Optional API proxy
+Install them with:
 
-The `router/server.py` module provides an OpenAI-compatible FastAPI proxy that
-can apply native, Romanized, or English-pivot strategies before forwarding a
-request. It requires configuration and a valid router model bundle.
+```powershell
+python -m pip install -r token_tax/requirements.txt
+```
 
-The proxy is separate from the Streamlit tokenizer app. For local app usage,
-running `audit/app.py` is sufficient.
+## Interpretation and limitations
 
-## Data and privacy
-
-- Token counts run locally once tokenizer assets are available.
-- Cached Hugging Face assets remain in the local Hugging Face cache.
-- Romanization is local.
-- NLLB pivot translation may download model weights and performs inference
-  locally.
-- The FLORES source archive and raw generated project data should not contain
-  private user text.
+- Word counts use Unicode letter/number runs, not morphological segmentation.
+- Synthetic noise is deterministic and is not collected from real user input.
+- Transliteration round trips do not establish semantic accuracy.
+- Token counts do not establish API cost or model quality.
+- SentencePiece results describe a separate experimental tokenizer.
+- Results depend on the corpus, library versions, and tokenizer encodings.
+- The dashboard should not be publicly deployed without authentication,
+  production hardening, and additional input validation.
 
 ## Troubleshooting
 
-### Streamlit cannot find a tokenizer
+### `ModuleNotFoundError`
 
-Run the audit once while online:
+Activate the virtual environment and install the Token Tax dependencies:
 
-```bash
-python -m audit.count_tokens
+```powershell
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r token_tax/requirements.txt
 ```
 
-Then use offline mode in the app or shell command.
+### Port 5000 is already in use
 
-### Offline app token counting fails
+Stop the other local Flask server or change the port in the `main()` function of
+[token_tax/4_dashboard.py](token_tax/4_dashboard.py).
 
-The live inspector requires the Qwen and Sarvam tokenizer assets to already be
-cached locally. Cache them by running the normal audit once with network access,
-then retry with `--offline`.
+### Dashboard charts are missing
 
-### English pivot translation is slow or fails
-
-- Confirm `transform/requirements.txt` dependencies are installed.
-- Allow enough disk space for the NLLB model download.
-- On CPU, reduce expectations for generation speed.
-- If the model is not downloaded, confirm network access and retry.
-
-### The audit says the FLORES files are missing
-
-Download the official FLORES-200 archive and extract the four `devtest` files
-into `audit/flores200_dataset/devtest/`, as described above.
-
-## Dataset and model sources
-
-- FLORES-200: <https://github.com/facebookresearch/flores>
-- FLORES archive: <https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz>
-- Qwen2.5-7B-Instruct: <https://huggingface.co/Qwen/Qwen2.5-7B-Instruct>
-- Sarvam-1: <https://huggingface.co/sarvamai/sarvam-1>
-- NLLB-200 distilled 600M:
-  <https://huggingface.co/facebook/nllb-200-distilled-600M>
-
-FLORES-200 is released under CC-BY-SA 4.0. Verify model licenses and provider
-terms separately before production use.
+Chart.js is loaded from jsDelivr. Check browser internet access and the browser
+console. Live token inspection and API processing do not depend on Chart.js.
